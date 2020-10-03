@@ -172,7 +172,7 @@ header .barra-busqueda {
 /* ------------------------- */
 /* Overlay */
 /* ------------------------- */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
 	.grid .item {
 		width: 31.33333%;
 		margin: 2px;
