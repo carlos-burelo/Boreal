@@ -13,23 +13,90 @@
 	</head>
 	<body>
 		<div class="contenedor"><!-- -- ---- ---- Contedor del Head ---- ---- -- -->
-		<header> <!-- -- ---- ---- (titulo / menus) ---- ---- -- -->
+			<header> <!-- -- ---- ---- (titulo / menus) ---- ---- -- -->
+				<div class="contenedor">
+				  <div class="header_main">
+				  <h2 class="logotipo"><img class="logo__img" src="src/img/Boreal_logo.png" alt="Boreal">oreal</h2>
+				</div>
+					<nav>
+						<form action="">
+							<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+						</form>
+					  <a href="#" class="activo">Home</a>
+					  <a href="#populares">Popular</a>
+					  <a href="#peliculas">Movies</a>
+					  <a href="#ovas">Ovas</a>
+					  <a href="#recientes">Recientes</a>
+					  <a href="#">Mi Lista</a>
+					  <a href="buscar">Buscar</a>
+					</nav>
+					<div class="menu_desplegable">
+					  <a href="index.html"><img class="logo__img" src="src/img/Boreal_logo.png" alt="Boreal"></a>
+					<nav class="busqueda">
+					  	<form action="">
+							<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+						</form>
+					</nav>
+					  <a href="#mipopup"><i class="fas fa-stream"></i></a>
+					</div>
+					<div class="popup" id="mipopup">
+					  <div class="contenedor__menu">
+						<a href="#">
+						<div class="boton__cerrar_menu">
+						  <a class="v" href="#"><i class="fas fa-times"></i></a>
+						</div>
+					  </a>
+					  <div class="popup-contenido">
+						<a href="index.html"><img class="logo__menu__img" src="src/img/Boreal_logo.png" alt="Boreal"></a>
+						<h3 class="activo"><a href="#">Home</a></h3>
+						<h3><a href="#">Buscar</a></h3>
+						<h3><a href="#">Populares</a></h3>
+						<h3><a href="#">Peliculas</a></h3>
+						<h3><a href="#">Ovas</a></h3>
+						<h3><a href="#">Recientes</a></h3>
+						<h3><a href="">Mi lista</a></h3>
+					  </div>
+					</div>
+				</div>
+			  </div>
+			  </header>
+		<!-- <header>
 			<img class="logo__img" src="src/img/Boreal_logo.png" alt="Boreal">
-			<nav>
-				<a href="index.html">Home</a>
-				<a href="index.html#populares">Popular</a>
-				<a href="index.html#peliculas">Movies</a>
-				<a href="index.html#ovas">Ovas</a>
-				<a href="index.html#recientes">Recientes</a>
-				<a href="#">Mi Lista</a>
-			</nav>
-			<form action="">
-				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
-			</form>
-			<div class="menu_desplegable">
-				<i class="fas fa-stream"></i>
-			</div>
-		</header>
+				<nav>
+					<a href="index.html">Home</a>
+					<a href="index.html#populares">Popular</a>
+					<a href="index.html#peliculas">Movies</a>
+					<a href="index.html#ovas">Ovas</a>
+					<a href="index.html#recientes">Recientes</a>
+					<a href="#">Mi Lista</a>
+				</nav>
+					<form action="">
+						<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+					</form>
+						<div class="menu_desplegable">	  
+							<a href="#mipopup"><i class="fas fa-stream"></i></a>
+						</div>
+						<div class="popup" id="mipopup">
+							<div class="contenedor__menu">
+							<a href="#">
+							<div class="boton__cerrar_menu">
+								<a class="v" href="#"><i class="fas fa-times"></i></a>
+							</div>
+							</a>
+							<div class="popup-contenido">
+							<a href="index.html"><img class="logo__menu__img" src="src/img/Boreal_logo.png" alt="Boreal"></a>
+							<h3 class="activo"><a href="#">Home</a></h3>
+							<h3><a href="#">Buscar</a></h3>
+							<h3><a href="#">Populares</a></h3>
+							<h3><a href="#">Peliculas</a></h3>
+							<h3><a href="#">Ovas</a></h3>
+							<h3><a href="#">Recientes</a></h3>
+							<h3><a href="">Mi lista</a></h3>
+							</div>
+						</div>
+					</div>
+					</div>
+		</header> -->
 		</div>
 		<div class="contenedor"><!-- -- ---- ---- Contenedor del los elementos ---- ---- -- -->
 			<section class="grid" id="grid">

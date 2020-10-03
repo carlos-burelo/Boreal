@@ -55,9 +55,10 @@ a {
 /* ------------------------- */
 /* HEADER */
 /* ------------------------- */
-header  {
+header .contenedor {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 /* logotipo */
@@ -90,6 +91,9 @@ header form {
 	float: right;
 	/* margin-right: -75px; */
 	color: #ffffff;
+}
+.busqueda{
+	display: none;
 }
 header .barra-busqueda {
 	width: 100%;
@@ -169,6 +173,91 @@ header .barra-busqueda {
 	opacity: 1;
 	transition: all .3s;
 }
+
+
+
+/*---- ---- ---- MENU PARA DISPOSITIVOS MOVILES ---- ---- ----*/
+.menu_desplegable{
+	width: 100%;
+	display: none;
+}
+.contenedor__menu{
+	height: 100%;
+	transition-delay: 2s;
+}
+.logo__menu__img{
+	margin: 20px 30px;
+	height: 40px;
+	width: 40px;
+}
+.popup-contenido {
+    /* align-items: center; */
+    background-color: var(--negro);
+    color: var(--letras-black);
+    width: 50%;
+    height: 100%;
+    /* margin: 14px -0px 0px 129px; */
+    position: relative;
+	border-radius: 8px;
+	float: right;
+}
+.popup-contenido a .activo{
+	color: var(--verde);
+}
+.popup-contenido h3{
+    color: #ffffff;
+    text-decoration: none;
+    background-color:var(--gris-oscuro);
+    padding: 10px 30px;
+    margin: 5px;
+	border-radius: 5px;
+	text-align: initial;
+}
+.popup-contenido h3:hover{
+	background: var(--verde);
+	color: #000000;
+}
+.popup-contenido a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.popup-contenido h3 a:hover{
+    text-decoration: none;
+    color: #000000;
+}
+.popup-contenido h3:hover .popup-contenido a{
+	color: #000000;
+}
+.popup{
+    background-color: rgba(0,0,0,.5);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: ease all .3s;
+}
+#mipopup:target{
+    opacity:1;
+    z-index: 200;
+    pointer-events:auto;
+}
+.boton__cerrar_menu {
+    /* margin: 15px 10px; */
+    width: 50%;
+    height: 100%;
+    color: var(--blanco);
+	float: left;
+
+    /* background: lightseagreen; */
+}
+.boton__cerrar_menu i{
+	width: 100%;
+	height: 100%;
+	color: transparent;
+}
 /* ------------------------- */
 /* Overlay */
 /* ------------------------- */
@@ -187,7 +276,24 @@ header .barra-busqueda {
 	nav{
 		display: none;
 	}
-	.menu_desplegable{
+	.header_main{
+		display: none;
+	}
+	.busqueda{
+		display: inline;
+		margin: 0;
+	}
+	header .menu_desplegable{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.fa-stream{
+		font-size: 30px;
+		color: var(--blanco);
+	}
+
+	/* .menu_desplegable{
 		display: flex;
 		margin-right: 10px;
 		margin-top: 14px;
@@ -197,6 +303,6 @@ header .barra-busqueda {
 		height: 40px;
 		width: 40px;
 		margin: 10px 0px;
-	}
+	} */
 }
 
