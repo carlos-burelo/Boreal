@@ -63,6 +63,11 @@ header .contenedor {
 	justify-content: space-between;
 	align-items: center;
 }
+.menu_desplegable{
+	width: 100%;
+	padding: 10px 10px;
+	display: none;
+}
 /* logotipo */
 header .logo__img{
 	height: 40px;
@@ -449,4 +454,24 @@ header nav a.activo {
 	text-align: center;
 	font-size: 18px;
 	color: var(--verde);
+}
+@media only screen and (max-width: 980px) {
+	.banner-principal .boton {
+		margin-bottom: 10px;
+	}
+	nav{
+		display: none;
+	}
+	.header_main{
+		display: none;
+	}
+	header .contenedor .menu_desplegable{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.fa-stream{
+		font-size: 30px;
+	}
+	
 }
