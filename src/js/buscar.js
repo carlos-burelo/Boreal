@@ -7,6 +7,7 @@ const grid = new Muuri('.grid', {
 window.addEventListener('load', () => {
 	grid.refreshItems().layout();
 // 	document.getElementById('grid').classList.add('imagenes-cargadas');
+	
 
 	// los listener de los enlaces para filtrar por categoria.
 	const enlaces = document.querySelectorAll('#categorias a');

@@ -104,7 +104,10 @@ header .barra-busqueda {
 	font-size: 16px;
 	outline: none;
 }
-
+.menu_desplegable{
+	display: none;
+	color: var(--blanco);
+}
 /* ------------------------- */
 /* Grid */
 /* ------------------------- */
@@ -126,7 +129,6 @@ header .barra-busqueda {
 .grid .item-contenido {
 	position: relative;	
 }
-
 .grid .item img {
 	width: 100%;
 	height: 250px;
@@ -170,3 +172,31 @@ header .barra-busqueda {
 /* ------------------------- */
 /* Overlay */
 /* ------------------------- */
+@media only screen and (max-width: 400px) {
+	.grid .item {
+		width: 31.33333%;
+		margin: 2px;
+	}
+	.grid .item img{
+		height: 170px;
+	}
+	.nombre_anime{
+		font-size: 11.2px;
+		flex-flow: column;
+	}
+	nav{
+		display: none;
+	}
+	.menu_desplegable{
+		display: flex;
+		margin-right: 10px;
+		margin-top: 14px;
+		font-size: 30px;
+	}
+	header .logo__img{
+		height: 40px;
+		width: 40px;
+		margin: 10px 0px;
+	}
+}
+
