@@ -1,0 +1,452 @@
+/*---- ---- ---- Ajuste universal ---- ---- ----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*---- ---- ---- Suavidad del scroll ---- ---- ----*/
+html {
+	scroll-behavior: smooth;
+}
+/*---- ---- ---- Variables css ---- ---- ----*/
+:root{
+    --radio: 10px;
+    --negro: #000000;
+    --blanco: #ffffff;
+	--gris: #252525;
+	--verde: #3ef0ac;
+	--azul: #0084ff;
+	--rojo: #ff2020;
+	--amarillo: #ffcb22;
+	--gris-oscuro: #070707;
+	--celeste: #5ea78b;
+}
+/*---- ---- ---- color del scrollbar ---- ---- ----*/
+::-webkit-scrollbar {
+	background: var(--negro);
+	border-radius: 4px;
+	width: 10px;
+	height: 8px; 
+}
+:-webkit-scrollbar-thumb:hover {
+	background: var(--negro);
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+	width: 10px;
+	height: 8px; 
+}
+::-webkit-scrollbar-thumb:active {
+	background-color:var(--verde);
+	width: 10px;
+	height: 8px; 
+}
+::-webkit-scrollbar-thumb {
+	background: var(--gris);
+	border-radius: 10px;
+}
+/*---- ---- ---- Body ---- ---- ----*/
+body{
+	font-family: 'Roboto', sans-serif;
+	background: var(--negro);
+	color: var(--blanco);
+}
+/*---- ---- ---- contenedor principal ---- ---- ----*/
+.contenedor {
+	width: 95%;
+	margin: auto;
+}
+.contenedor2 {
+	width: 96.5%;
+	margin: auto;
+}
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/* logotipo */
+header .logo__img{
+	height: 40px;
+	width: 40px;
+}
+header .logotipo {
+    font-family: 'Balsamiq Sans', cursive;
+	font-weight: normal;
+	color: var(--celeste);
+	margin: 5px 0px 0px 5px;
+	font-size: 40px;
+}
+header nav a {
+	color: #666666;
+	text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+header nav a:hover{
+    color: #ffffff;
+    transition: 0.4s;
+}
+header nav a.activo {
+	color: var(--verde);
+}
+/*---- ---- ---- Slider principal ---- ---- ----*/
+.slider { /*---- ---- ---- proporciones del slider ---- ---- ----*/
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+.slider ul { /*---- ---- ---- slider en formato lista*/
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: cambio 20s infinite alternate linear;
+}
+.slider img { /*---- ---- ---- imagenes dentro del slider*/
+	width: 100%;
+}
+.slider li { /*---- ---- ---- elememntos dentro del slider*/
+	width: 100%;
+	list-style: none;
+}
+@keyframes cambio { /*---- ---- ---- animacion del slider*/
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+/*---- ---- ---- Backgrounds de el slider principal ---- ---- ----*/
+.slider-content1 { /*fire force */
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://image.photocnc.com/aoaodcom/2019-09/15/201909150644144849.png.w1152.h864.jpg?down);
+}
+.slider-content2 { /*kimetsu */
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://i.pinimg.com/originals/88/eb/5c/88eb5cc2fcebaeb2bd76987a4ca4ad2b.png);
+}
+.slider-content3 { /*konosuba */
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://wallpaperset.com/w/full/3/1/9/415853.jpg);
+}
+.slider-content4 { /*boku no hero */
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://wallpapercave.com/wp/wp1874036.jpg);
+}
+.banner-principal { /*---- ---- ---- estructura del contenido del slider ---- ---- ----*/
+	font-size: 16px;
+	height: 500px;
+	color: #fff;
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	align-items: end;
+}
+.banner-principal .contenedor { /*---- ---- ---- margenes del contenedor del slider ---- ---- ----*/
+	margin: 1 auto;
+	margin-bottom: 100px;
+}
+.banner-principal .titulo-banner { /*---- ---- ---- Titulo del Slider (anime) ---- ---- ----*/
+	font-weight: 600;
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+.banner-principal .descripcion-banner { /*---- ---- ---- descripcion del slider (anime) ---- ---- ----*/
+	font-weight: normal;
+	font-size: 16;
+	line-height: 28px;
+	max-width: 50%;
+	margin-bottom: 20px;
+}
+.banner-principal .boton {  /*---- ---- ---- Botones de reproduccion del slider ---- ---- ----*/
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 4.96px;
+	padding: 14.88px 29.92px;
+	color: #fff;
+	margin-right: 20px;
+	cursor: pointer;
+	transition: .3s ease all;
+    font-size: 17.92px;
+    outline: inherit;
+}
+.banner-principal .boton:hover { /*---- ---- ---- Hover de los botones de reproduccion del slider ---- ---- ----*/
+	background: #fff;
+	color: #000;
+}
+.banner-principal .boton i { /*---- ---- ---- margen de los iconos de los botones del slider  ---- ---- ----*/
+	margin-right: 20px;
+}
+@media screen and (max-width: 800px) { /*---- ---- ---- Media jquerys del header ---- ---- ----*/
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.banner-principal {
+		font-size: 14px;
+	}
+
+	.banner-principal .descripcion-banner {
+		max-width: 100%;
+	}
+}
+/*---- ---- ---- propiedades de categorias ---- ---- ----*/
+.categorias{
+	margin: 20px 0px;
+	font-size: 20px;
+	float: left;
+}
+.c_populares{
+	color:var(--azul);
+}
+.c_peliculas{
+	color: var(--verde)
+}
+.c_ovas{
+	color: var(--amarillo);
+}
+.c_recientes{
+	color: var(--rojo);
+}
+/*---- ---- ---- Iconos de las categorias ---- ---- ----*/
+.fa-play,
+.fa-video,
+.fa-star,
+.fa-clock{
+	margin-right: 15px;
+	margin-left: 32px;
+}
+/*---- ---- ---- carrusel para las categorias ---- ---- ----*/
+.carousel {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	box-sizing: border-box;
+}
+.carousel__container {
+	white-space: nowrap;
+	position: relative;
+	width: 96%;
+	margin: auto;
+}
+.carousel__lista {
+	overflow: hidden;
+}
+.carousel__elemento {
+	text-align: center;
+}
+.carousel__item {
+	width: 200px;
+	height: 250px;
+	border-radius: var(--radio);
+	overflow: hidden;
+	margin-right: 10px;
+	display: inline-block;
+	cursor: pointer;
+	transition: 450ms all;
+	transform-origin: center;
+	position: relative;
+}
+.carousel__container:hover .carousel__item {
+	opacity: 0.3;
+}
+.carousel__container:hover .carousel__item:hover {
+	transform: scale(1.1);
+	opacity: 1;
+}
+.carousel__item__img {
+	width: 150px;
+	height: 230px;
+	object-fit: cover;
+}
+.carousel__item:hover {
+	transition: all .4s;
+	transform: scale(1.1);
+	border-radius: var(--radio);
+}
+
+.carousel__item__details {
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+	font-size: 10px;
+	color: white;
+	opacity: 0;
+	transition: 450ms opacity;
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	white-space: normal;
+	display: flex;
+	flex-flow: row wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carousel__item__details:hover {
+	opacity: 1;
+}
+.carousel__item__details--title {
+   font-size: 15px;
+}
+
+.carousel::-webkit-scrollbar {    
+	height: 10px;
+	overflow-y: hidden;
+} 
+.carousel::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1); 
+	border-radius: 8px;
+	overflow: hidden;
+}
+.carousel::-webkit-scrollbar-track-piece {
+	max-width: 100px;
+	overflow: hidden;
+}
+.carousel::-webkit-scrollbar-thumb {
+	border-radius: 8px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+	background-color: gray;
+	overflow: hidden;  
+}
+
+.carousel__anterior1,
+.carousel__anterior2,
+.carousel__anterior3,
+.carousel__anterior4 {
+    float: left;
+	left: 20px;
+	padding:114px 4px;
+	color: var(--blanco);
+	background: none;
+	border: none;
+	outline: none;
+}
+.carousel__siguiente1,
+.carousel__siguiente2,
+.carousel__siguiente3,
+.carousel__siguiente4{
+	float: right;
+	margin-left: -1px;
+	padding: 114px 4px;
+	color: var(--blanco);
+	background: none;
+	border: 0px solid;
+	outline: none;
+}
+.carousel__siguiente1:hover,
+.carousel__siguiente2:hover,
+.carousel__siguiente3:hover,
+.carousel__siguiente4:hover,
+.carousel__anterior1:hover,
+.carousel__anterior2:hover,
+.carousel__anterior3:hover,
+.carousel__anterior4:hover{
+	transition: all .3s;
+	color: var(--verde);
+	background-color: var(--gris-oscuro);
+}
+/*---- ---- ---- bonones de los animes ---- ---- ----*/
+
+.card-boton .fa-play{
+	margin: 0;
+	margin-right: 4px;
+}
+.card-boton {
+    margin-top: 10px;
+	background: rgba(7, 7, 7, 0.596);
+	border: none;
+	border-radius: 4.96px;
+	padding: 15px 25px;
+	color: #fff;
+	cursor: pointer;
+	transition: .3s ease all;
+    font-size: 12px;
+    outline: inherit;
+}
+.card-boton i {
+	margin-right: 0px;
+}
+.card-boton:hover{ 
+    background: #8b8b8b4f;
+	color: rgb(255, 255, 255);
+}
+
+.listado-capitulos{
+  margin-bottom: 20px;
+  max-height: 400px;
+  overflow-x: auto;
+}
+/*---- ---- ---- Footer ---- ---- ----*/
+.footer{
+	margin-top: 20px;
+	width: 100%;
+	height: 200px;
+	background: #070707;
+	padding: 20px 0px;
+}
+.docs-list,
+.social-list{
+	text-decoration: none;
+	list-style: none;
+}
+.social{
+	font-size: 20px;
+}
+.social-list{
+	float: right;
+	top: 30px;
+	display: flex;
+}
+.docs-list li,.social-list{
+	margin: 10px 0px;
+}
+.social-list li{
+	margin: 0px 10px;
+}
+.fa-facebook-square,
+.fa-github,
+.fa-twitter,
+.fa-telegram-plane{
+	margin-right: 5px;
+	font-size: 30px;
+}
+/* .facebook{
+	color: #3b5998;
+}
+.github{
+	color: #333;
+}
+.twitter{
+	color: #1da1f2;
+}
+.telegram{
+	color: #0088cc;
+} */
+.fa-facebook-square,
+.fa-github,
+.fa-twitter,
+.fa-telegram-plane{
+	color: #fff;
+}
+.fa-facebook-square:hover,
+.fa-github:hover,
+.fa-twitter:hover,
+.fa-telegram-plane:hover{
+	color: var(--azul);
+	transition: all .4s;
+	transform: scale(1.3);
+}
+.copy{
+	text-align: center;
+	font-size: 18px;
+	color: var(--verde);
+}

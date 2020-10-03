@@ -1,0 +1,172 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+    --radio: 10px;
+    --negro: #000000;
+    --blanco: #ffffff;
+	--gris: #252525;
+	--verde: #3ef0ac;
+	--azul: #0084ff;
+	--rojo: #ff2020;
+	--amarillo: #ffcb22;
+	--gris-oscuro: #070707;
+	--celeste: #5ea78b;
+}
+/*---- ---- ---- color del scrollbar ---- ---- ----*/
+::-webkit-scrollbar {
+	background: var(--negro);
+	border-radius: 4px;
+	width: 10px;
+	height: 8px; 
+}
+:-webkit-scrollbar-thumb:hover {
+	background: var(--negro);
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+	width: 10px;
+	height: 8px; 
+}
+::-webkit-scrollbar-thumb:active {
+	background-color:var(--verde);
+	width: 10px;
+	height: 8px; 
+}
+::-webkit-scrollbar-thumb {
+	background: var(--gris);
+	border-radius: 10px;
+}
+body {
+	background: #000000;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+.contenedor {
+	width: 95%;
+	margin: auto;
+}
+
+/* ------------------------- */
+/* HEADER */
+/* ------------------------- */
+header  {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* logotipo */
+header .logo__img{
+	height: 40px;
+	width: 40px;
+	margin: 15px 0px;
+}
+
+nav {
+    margin-top: 20px;
+    margin-left: auto;
+}
+header nav a {
+	color: #666666;
+	text-decoration: none;
+    margin-right: 20px;
+	font-weight: bold;
+}
+header nav a:hover{
+    color: #ffffff;
+    transition: 0.4s;
+}
+header nav a.activo {
+	color: var(--verde);
+}
+header form {
+	margin-bottom: 20px;
+	margin-top: 10px;
+	float: right;
+	/* margin-right: -75px; */
+	color: #ffffff;
+}
+header .barra-busqueda {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: #1f1f1f;
+	padding: 0px 20px;
+	color: #fff;
+	border-radius: 100px;
+	border: none;
+	text-align: left;
+	font-size: 16px;
+	outline: none;
+}
+
+/* ------------------------- */
+/* Grid */
+/* ------------------------- */
+
+.grid {
+	position: relative;
+	width: 100%;
+}
+
+.grid .item {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 5px;
+	width: 13.5%;
+	color: var(--blanco);
+}
+
+.grid .item-contenido {
+	position: relative;	
+}
+
+.grid .item img {
+	width: 100%;
+	height: 250px;
+	cursor: pointer;
+	vertical-align: top;
+	border-radius: 5px;
+}
+/* .grid:hover .item img{
+	transition: all 1.1s;
+	opacity: 0.5;
+} */
+
+.grid:hover .item img:hover{
+	transition: all .3s;
+}
+
+.nombre_anime{
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+	font-size: 14px;
+	color: white;
+	opacity: 0;
+	transition: 450ms opacity;
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	white-space: normal;
+	display: flex;
+	flex-flow: row wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.nombre_anime:hover {
+	opacity: 1;
+	transition: all .3s;
+}
+/* ------------------------- */
+/* Overlay */
+/* ------------------------- */

@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="shortcut icon" href="src/img/Boreal.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css"> 
+    <link rel="stylesheet" href="src/css/main.css">
+    <title>BOREAL</title>
+</head>
+<body>
+  <header> <!-- -- ---- ---- (titulo / menus) ---- ---- -- -->
+    <div class="contenedor">
+      <h2 class="logotipo"><img class="logo__img" src="src/img/Boreal.png" alt="Boreal">oreal</h2>
+        <nav>
+          <a href="#" class="activo">Home</a>
+          <a href="#populares">Popular</a>
+          <a href="#peliculas">Movies</a>
+          <a href="#ovas">Ovas</a>
+          <a href="#recientes">Recientes</a>
+          <a href="#">Mi Lista</a>
+          <a href="buscar.html">Buscar</a>
+        </nav>
+    </div>
+  </header>
+
+  <div class="slider"> <!-- Slider principal -->
+    <ul>
+      <li> <!-- contenido-1 -->
+        <main>
+          <div class="banner-principal slider-content1">
+            <div class="contenedor">
+              <h3 class="titulo-banner">Enen no Shouboutai</h3>
+              <p class="descripcion-banner">Tokio se encuentra bajo un extraño fenómeno: ¡la gente entra,
+              sin remedio, en combustión espontánea! Aunque, afortunadamente, hay un equipo a cargo de 
+              mantener a raya este particular infierno…</p>
+              <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+              <button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+            </div>
+          </div>
+        </main>
+      </li>
+      <li> <!-- contenido-2 -->
+        <main>
+          <div class="banner-principal slider-content2">
+            <div class="contenedor">
+              <h3 class="titulo-banner">Kimetsu no Yaiba</h3>
+              <p class="descripcion-banner">Estamos en la era Taisho de Japón. Tanjiro, un joven que se gana 
+              la vida vendiendo carbón, descubre un día que su familia ha sido asesinada por un demonio. Para 
+              empeorar las cosas, su hermana menor Nezuko, la única superviviente de la masacre, ha sufrido una 
+              transformación en demonio.</p>
+              <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+              <button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+            </div>
+          </div>
+        </main>
+      </li>
+      <li> <!-- contenido-3 -->
+        <main>
+          <div class="banner-principal slider-content3">
+            <div class="contenedor">
+              <h3 class="titulo-banner">Kono Subarashii Sekai ni Shukufuku wo!</h3>
+              <p class="descripcion-banner">
+              Esta popular comedia de mundos alternativos gira en torno a Kazuma Satou, un hikkikomori fan a muerte 
+              de los videojuegos, el anime y el manga. Un accidente de tráfico pone fin a su vida… o eso debería haber 
+              pasado, pero se despierta con una preciosa chica al lado que se presenta diciendo que es una diosa.</p>
+              <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+              <button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+            </div>
+          </div>
+        </main>
+      </li>
+      <li> <!-- contenedor-4 -->
+        <main>
+          <div class="banner-principal slider-content4">
+            <div class="contenedor">
+              <h3 class="titulo-banner">Boku no Hero Academia</h3>
+              <p class="descripcion-banner">
+              Las personas no nacen igual. El protagonista de esta historia es uno de esos casos raros que nacen sin 
+              superpoderes, pero esto no le impedir&aacute; perseguir su sue&ntilde;o: ser un gran h&eacute;roe como el 
+              legendario All-Might. </p>
+              <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+              <button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+            </div>
+          </div>
+        </main>
+      </li>
+    </ul>
+  </div>
+  <h3 class="categorias c_populares" id="populares"><i class="fas fa-star"></i>Populares</h3>
+  <div class="contenedor2">
+      <div class="carousel">
+        <div class="slider__popular">
+          <button class="carousel__anterior1"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel__siguiente1"><i class="fas fa-chevron-right"></i></button>
+          <div class="carousel__container1">
+          <div class="carousel__item">
+            <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+              <div class="carousel__item__details">          
+              <p class="carousel__item__details--title">Kimetsu no Yaiba</p>
+              <div class="carousel__item__details--icons">
+                <a href="src/animes/kimetsu_no_yaiba"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <img class="carousel__item__img" src="https://vignette.wikia.nocookie.net/shingeki-no-kyojin/images/5/53/Primera_temporada_%28parte_1%29.png/revision/latest?cb=20181015211526&path-prefix=es" alt="People">
+            <div class="carousel__item__details">          
+              <p class="carousel__item__details--title">Shingeki No Kyojin</p>
+              <div class="carousel__item__details--icons">                  
+                <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <img class="carousel__item__img" src="https://ramenparados.com/wp-content/uploads/2019/11/My-Hero-Academia-S4_2x3.png" alt="People">
+            <div class="carousel__item__details">          
+              <p class="carousel__item__details--title">Boku No Hero Academia</p>
+              <div class="carousel__item__details--icons">                  
+                <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <img class="carousel__item__img" src="https://ramenparados.com/wp-content/uploads/2020/04/Tsugumomo-2-300x427.jpg" alt="People">
+            <div class="carousel__item__details">          
+              <p class="carousel__item__details--title">Tsugu Tsugumomo</p>
+              <div class="carousel__item__details--icons">                  
+                <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <img class="carousel__item__img" src="https://ramenparados.com/wp-content/uploads/2019/11/My-Hero-Academia-S4_2x3.png" alt="People">
+            <div class="carousel__item__details">          
+              <p class="carousel__item__details--title">Boku No Hero Academia</p>
+              <div class="carousel__item__details--icons">                  
+                <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <img class="carousel__item__img" src="https://ramenparados.com/wp-content/uploads/2019/11/My-Hero-Academia-S4_2x3.png" alt="People">
+            <div class="carousel__item__details">          
+              <p class="carousel__item__details--title">Boku No Hero Academia</p>
+              <div class="carousel__item__details--icons">                  
+                <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+            <div class="carousel__item__details">          
+              <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+              <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+              <div class="carousel__item__details--icons">                  
+                  <i class="fa fa-2x fa-play-circle"></i>
+                  <i class="fa fa-2x fa-plus-circle"></i>
+                
+                </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+            <div class="carousel__item__details">          
+              <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+              <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+              <div class="carousel__item__details--icons">                  
+                  <i class="fa fa-2x fa-play-circle"></i>
+                  <i class="fa fa-2x fa-plus-circle"></i>
+                
+                </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+            <div class="carousel__item__details">          
+              <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+              <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+              <div class="carousel__item__details--icons">                  
+                  <i class="fa fa-2x fa-play-circle"></i>
+                  <i class="fa fa-2x fa-plus-circle"></i>
+                
+                </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+            <div class="carousel__item__details">          
+              <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+              <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+              <div class="carousel__item__details--icons">                  
+                  <i class="fa fa-2x fa-play-circle"></i>
+                  <i class="fa fa-2x fa-plus-circle"></i>
+                </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+            <div class="carousel__item__details">          
+              <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+              <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+              <div class="carousel__item__details--icons">                  
+                  <i class="fa fa-2x fa-play-circle"></i>
+                  <i class="fa fa-2x fa-plus-circle"></i>
+                </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+            <div class="carousel__item__details">          
+              <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+              <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+              <div class="carousel__item__details--icons">                  
+                  <i class="fa fa-2x fa-play-circle"></i>
+                  <i class="fa fa-2x fa-plus-circle"></i>
+                </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+            <div class="carousel__item__details">          
+              <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+              <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+              <div class="carousel__item__details--icons">                  
+                  <i class="fa fa-2x fa-play-circle"></i>
+                  <i class="fa fa-2x fa-plus-circle"></i>
+                </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+            <div class="carousel__item__details">          
+              <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+              <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+              <div class="carousel__item__details--icons">                  
+                  <i class="fa fa-2x fa-play-circle"></i>
+                  <i class="fa fa-2x fa-plus-circle"></i>
+                </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+            <div class="carousel__item__details">          
+              <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+              <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+              <div class="carousel__item__details--icons">                  
+                  <i class="fa fa-2x fa-play-circle"></i>
+                  <i class="fa fa-2x fa-plus-circle"></i>
+                </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+            <div class="carousel__item__details">          
+              <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+              <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+              <div class="carousel__item__details--icons">                  
+                  <i class="fa fa-2x fa-play-circle"></i>
+                  <i class="fa fa-2x fa-plus-circle"></i>
+                </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+            <div class="carousel__item__details">          
+              <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+              <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+              <div class="carousel__item__details--icons">                  
+                  <i class="fa fa-2x fa-play-circle"></i>
+                  <i class="fa fa-2x fa-plus-circle"></i>
+                </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+            <div class="carousel__item__details">          
+              <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+              <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+              <div class="carousel__item__details--icons">                  
+                  <i class="fa fa-2x fa-play-circle"></i>
+                  <i class="fa fa-2x fa-plus-circle"></i>
+                </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <h3 class="categorias c_peliculas" id="peliculas"><i class="fas fa-video"></i>Peliculas</h3>
+  <div class="contenedor2">
+    <div class="carousel">
+      <div class="slider__popular">
+        <button class="carousel__anterior2"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel__siguiente2"><i class="fas fa-chevron-right"></i></button>
+        <div class="carousel__container2">
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+            <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Kimetsu no Yaiba</p>
+            <div class="carousel__item__details--icons">
+              <a href="src/animes/kimetsu_no_yaiba.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://vignette.wikia.nocookie.net/shingeki-no-kyojin/images/5/53/Primera_temporada_%28parte_1%29.png/revision/latest?cb=20181015211526&path-prefix=es" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Shingeki No Kyojin</p>
+            <div class="carousel__item__details--icons">                  
+              <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://ramenparados.com/wp-content/uploads/2019/11/My-Hero-Academia-S4_2x3.png" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Boku No Hero Academia</p>
+            <div class="carousel__item__details--icons">                  
+              <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://ramenparados.com/wp-content/uploads/2020/04/Tsugumomo-2-300x427.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Tsugu Tsugumomo</p>
+            <div class="carousel__item__details--icons">                  
+              <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://ramenparados.com/wp-content/uploads/2019/11/My-Hero-Academia-S4_2x3.png" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Boku No Hero Academia</p>
+            <div class="carousel__item__details--icons">                  
+              <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://ramenparados.com/wp-content/uploads/2019/11/My-Hero-Academia-S4_2x3.png" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Boku No Hero Academia</p>
+            <div class="carousel__item__details--icons">                  
+              <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h3 class="categorias c_ovas" id="ovas"><i class="fas fa-play"></i>Ovas</h3>
+  <div class="contenedor2">
+    <div class="carousel">
+      <div class="slider__popular">
+        <button class="carousel__anterior3"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel__siguiente3"><i class="fas fa-chevron-right"></i></button>
+        <div class="carousel__container3">
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+            <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Kimetsu no Yaiba</p>
+            <div class="carousel__item__details--icons">
+              <a href="src/animes/kimetsu_no_yaiba.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://vignette.wikia.nocookie.net/shingeki-no-kyojin/images/5/53/Primera_temporada_%28parte_1%29.png/revision/latest?cb=20181015211526&path-prefix=es" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Shingeki No Kyojin</p>
+            <div class="carousel__item__details--icons">                  
+              <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://ramenparados.com/wp-content/uploads/2019/11/My-Hero-Academia-S4_2x3.png" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Boku No Hero Academia</p>
+            <div class="carousel__item__details--icons">                  
+              <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://ramenparados.com/wp-content/uploads/2020/04/Tsugumomo-2-300x427.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Tsugu Tsugumomo</p>
+            <div class="carousel__item__details--icons">                  
+              <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://ramenparados.com/wp-content/uploads/2019/11/My-Hero-Academia-S4_2x3.png" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Boku No Hero Academia</p>
+            <div class="carousel__item__details--icons">                  
+              <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://ramenparados.com/wp-content/uploads/2019/11/My-Hero-Academia-S4_2x3.png" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Boku No Hero Academia</p>
+            <div class="carousel__item__details--icons">                  
+              <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h3 class="categorias c_recientes" id="recientes"><i class="fas fa-clock"></i>Agregados recientemente</h3>
+  <div class="contenedor2">
+    <div class="carousel">
+      <div class="slider__popular">
+        <button class="carousel__anterior4"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel__siguiente4"><i class="fas fa-chevron-right"></i></button>
+        <div class="carousel__container4">
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+            <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Kimetsu no Yaiba</p>
+            <div class="carousel__item__details--icons">
+              <a href="src/animes/kimetsu_no_yaiba.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://vignette.wikia.nocookie.net/shingeki-no-kyojin/images/5/53/Primera_temporada_%28parte_1%29.png/revision/latest?cb=20181015211526&path-prefix=es" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Shingeki No Kyojin</p>
+            <div class="carousel__item__details--icons">                  
+              <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://ramenparados.com/wp-content/uploads/2019/11/My-Hero-Academia-S4_2x3.png" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Boku No Hero Academia</p>
+            <div class="carousel__item__details--icons">                  
+              <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://ramenparados.com/wp-content/uploads/2020/04/Tsugumomo-2-300x427.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Tsugu Tsugumomo</p>
+            <div class="carousel__item__details--icons">                  
+              <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://ramenparados.com/wp-content/uploads/2019/11/My-Hero-Academia-S4_2x3.png" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Boku No Hero Academia</p>
+            <div class="carousel__item__details--icons">                  
+              <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://ramenparados.com/wp-content/uploads/2019/11/My-Hero-Academia-S4_2x3.png" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Boku No Hero Academia</p>
+            <div class="carousel__item__details--icons">                  
+              <a href="src/animes/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__item__img" src="https://i.pinimg.com/originals/e2/dc/7c/e2dc7ce88a5e14559fb3f81b4d1d77c2.jpg" alt="People">
+          <div class="carousel__item__details">          
+            <p class="carousel__item__details--title">Título descriptivo del vídeo en curso</p>
+            <p class="carousel__item__details--subtitle">2019 16+ 114 minutos</p>
+            <div class="carousel__item__details--icons">                  
+                <i class="fa fa-2x fa-play-circle"></i>
+                <i class="fa fa-2x fa-plus-circle"></i>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+  <script src="src/js/main.js"></script>
+
+  <footer>
+		<div class="footer">
+			<div class="contenedor">
+				<h2 class="logotipo">NO MONEY NO LINK</h2>
+				<ul class="social-list">
+					<li class="social facebook"><i class="fab fa-facebook-square"></i></li>
+					<li class="social twitter"><i class="fab fa-twitter"></i></li>
+					<li class="social github"><i class="fab fa-github"></i></li>
+					<li class="social telegram"><i class="fab fa-telegram-plane"></i></li>
+				</ul>
+				<ul class="docs-list">
+					<li class="docs">Documentacion</li>
+					<li class="docs">Repositorio</li>
+					<li class="docs">Acerca de:</li>
+				</ul>
+				<h3 class="copy">&copy; Carlos Burelo 2020</h3>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
