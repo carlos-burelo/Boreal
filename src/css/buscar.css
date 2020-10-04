@@ -67,9 +67,13 @@ header .logo__img{
 	width: 40px;
 	margin: 15px 0px;
 }
+.logo__img__menu{
+	height: 40px;
+	width: 40px;
+	margin: 10px 0px;
+}
 
 nav {
-    margin-top: 20px;
     margin-left: auto;
 }
 header nav a {
@@ -77,6 +81,7 @@ header nav a {
 	text-decoration: none;
     margin-right: 20px;
 	font-weight: bold;
+	float: left;
 }
 header nav a:hover{
     color: #ffffff;
@@ -86,14 +91,11 @@ header nav a.activo {
 	color: var(--verde);
 }
 header form {
-	margin-bottom: 20px;
-	margin-top: 10px;
-	float: right;
 	/* margin-right: -75px; */
 	color: #ffffff;
 }
-.busqueda{
-	display: none;
+nav {
+	float: left;
 }
 header .barra-busqueda {
 	width: 100%;
@@ -197,7 +199,6 @@ header .barra-busqueda {
     width: 50%;
     height: 100%;
     /* margin: 14px -0px 0px 129px; */
-    position: relative;
 	border-radius: 8px;
 	float: right;
 }
@@ -288,11 +289,22 @@ header .barra-busqueda {
 		justify-content: space-between;
 		align-items: center;
 	}
+	.logo__img{
+		display: none;
+	}
 	.fa-stream{
 		font-size: 30px;
+		margin-right: 10px;
 		color: var(--blanco);
 	}
-
+	header form {
+		width: 80%;
+		margin-top: 10px;
+		margin-right: 20%;
+		margin-left: 20%;
+		margin-bottom: -50px;
+		color: #ffffff;
+	}
 	/* .menu_desplegable{
 		display: flex;
 		margin-right: 10px;
