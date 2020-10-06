@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="shortcut icon" href="src/img/Boreal_logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css"> 
+    <link rel="stylesheet" href="src/css/agregar.css">
+    <title>BOREAL</title>
+</head>
+<body>
+  <header> <!-- -- ---- ---- (titulo / menus) ---- ---- -- -->
+    <div class="contenedor">
+      <div class="header_main">
+      <h2 class="logotipo"><img class="logo__img" src="src/img/Boreal_logo.png" alt="Boreal"></h2>
+    </div>
+        <nav>
+          <a href="#" class="activo">Home</a>
+          <a href="#populares">Popular</a>
+          <a href="#peliculas">Movies</a>
+          <a href="#ovas">Ovas</a>
+          <a href="#recientes">Recientes</a>
+          <a href="#">Mi Lista</a>
+          <a href="buscar">Buscar</a>
+        </nav>
+  </header>
+<div class="contenedor">
+    <div class="contenedor__principal">
+      <div class="contenedor__banner">
+        <h3 class="titulo">Agregar <span>Anime</span></h3>
+        <img class="banner__img" src="src/img/quetzalcoalt.png">
+
+        <div class="contenedor__imagen">
+          <!-- <img class="anime__img" src="src/img/portadas/fate_grsan_order_babylonia.jpg" alt="anime"> -->
+          <div class="anime__img" id="portada">
+            <!-- <input class="enviar__datos anime__img_input" id="portada" type="file"> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="contenedor_info">
+        <form action="">
+          <h4 class="label">Nombre del anime</h4>
+          <input type="text" class="inputs nombre_del_anime" id="anime" placeholder="Ingrese el nombre del anime">
+          <h4 class="label">Autor</h4>
+          <input type="text" class="inputs nombre_del_anime" id="autor" placeholder="Ingrese el nombre del anime">
+          <h4 class="label">Studio</h4>
+          <input type="text" class="inputs nombre_del_anime" id="estudio" placeholder="Ingrese el nombre del anime">
+          <h4 class="label">Otros nombres</h4>
+          <input type="text" class="inputs nombre_del_anime" id="alternativas" placeholder="Ingrese el nombre del anime">
+          <h4 class="label">Genero</h4>
+          <input type="text" class="inputs nombre_del_anime" id="genero" placeholder="Ingrese el nombre del anime">
+          <h4 class="label">Descripcion</h4>
+          <textarea class="inputs descripcion" name="" id="" cols="30" rows="3"></textarea>
+          <button class="enviar__datos" type="submit" onclick='return enviarFormulario()' value='enviar'>Guardar</button>
+		  	</form>
+      </div>
+    </div>
+  </div>
+  <script src="src/js/agregar.js"></script>
+</body>
+</html>

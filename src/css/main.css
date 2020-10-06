@@ -545,7 +545,7 @@ h3 .activo {
 	font-size: 18px;
 	color: var(--verde);
 }
-
+/*---- ---- ---- RESPONSIVE DESING (MOBILE) ---- ---- ----*/
 @media only screen and (max-width: 980px) {
 	.banner-principal .boton {
 		margin-bottom: 10px;
