@@ -155,8 +155,10 @@ header .contenedor {
 	height: 100%;
 	color: transparent;
 }
-
 /* logotipo */
+.logotipo{
+	color: var(--verde)
+}
 header .logo__img{
 	height: 40px;
 	width: 40px;

@@ -1,9 +1,12 @@
 /*---- ---- ---- Ajuste universal ---- ---- ----*/
 *{
-    margin: 0;
-    padding: 0;
 	box-sizing: border-box;
 	outline: none !important;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
 }
 /*---- ---- ---- Suavidad del scroll ---- ---- ----*/
 html {
@@ -23,12 +26,16 @@ html {
 	--gris-oscuro: #070707;
 	--celeste: #5ea78b;
 }
+a:focus{
+	outline: none;
+}
 a{
     outline:none !important;
     outline-width: 0 !important;
     box-shadow: none;
     -moz-box-shadow: none;
-    -webkit-box-shadow: none;
+	-webkit-box-shadow: none;
+	user-select: none;
 }
 /*---- ---- ---- color del scrollbar ---- ---- ----*/
 ::-webkit-scrollbar {
@@ -52,9 +59,6 @@ a{
 	background: var(--gris);
 	border-radius: 10px;
 }
-mostrar{
-	display: none;
-}
 /*---- ---- ---- Body ---- ---- ----*/
 body{
 	font-family: 'Roboto', sans-serif;
@@ -66,16 +70,11 @@ body{
 	width: 95%;
 	margin: auto;
 }
-.contenedor2 {
-	width: 96.5%;
-	margin: auto;
-}
 header .contenedor {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-/* logotipo */
 header .logo__img{
 	height: 40px;
 	width: 40px;
@@ -104,6 +103,9 @@ h3 .activo {
 	color: var(--verde);
 }
 /*---- ---- ---- MENU PARA DISPOSITIVOS MOVILES ---- ---- ----*/
+.logotipo{
+	color: var(--verde);
+}
 .menu_desplegable{
 	width: 100%;
 	padding: 10px 10px;
@@ -186,47 +188,9 @@ h3 .activo {
 	height: 100%;
 	color: transparent;
 }
-.banner-principal {
-	font-size: 16px;
-	color: #fff;
-	height: 450px;
-	/* display: flex;
-	align-items: end; */
-}
-.banner-principal .contenedor {
-	margin-bottom: 100px;
-}
-.banner-principal .titulo-banner {
-	font-weight: 600;
-	font-size: 50px;
-}
-.banner-principal .descripcion-banner {
-	font-weight: normal;
-	font-size: 16;
-	line-height: 28px;
-	margin-bottom: 20px;
-}
-.banner-principal .boton {
-	background: rgba(0,0,0, 0.5);
-	border: none;
-	border-radius: 4.96px;
-	padding: 14.88px 29.92px;
-	color: #fff;
-	margin-right: 20px;
-	cursor: pointer;
-	transition: .3s ease all;
-    font-size: 17.92px;
-    outline: inherit;
-}
-.banner-principal .boton:hover {
-	background: #fff;
-	color: #000;
-}
-.banner-principal .boton i {
-	margin-right: 20px;
-}
-.contenedor__estado{
-	margin: 10px 0px;
+.fa-stream{
+	font-size: 30px;
+	color: var(--blanco);
 }
 /*---- ---- ---- Navegacion ---- ---- ----*/
 .navegacion{
@@ -236,6 +200,17 @@ h3 .activo {
 	color: var(--blanco);
 	text-decoration: none;
 	border-radius: var(--radio);
+}
+/*---- ---- ---- capitulos ---- ---- ----*/
+.contenedor__video{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+video{
+	width: 98%;
+	margin: 14px 0px;
+	border-radius: 4px;
 }
 /*---- ---- ---- Animes ---- ---- ----*/
 .estado{
@@ -276,11 +251,11 @@ h3 .activo {
 	border-radius: 8px;
 }
 .lista__capitulos{
-	font-size: 30px;
+	font-size: 25px;
 	margin: 10px 0px;
 }
 .contenedor__scrollbar{
-	width: 50%;
+	width: 100%;
 	display: flex;
 }
 .contenedor__capitulos{
@@ -300,6 +275,11 @@ h3 .activo {
 	color: var(--blanco);
 	text-decoration: none;
 }
+.contenedor__capitulos li:hover{
+	background-color: var(--gris);
+	outline: none;
+}
+
 
 /*---- ---- ---- Footer ---- ---- ----*/
 .footer{
@@ -354,6 +334,7 @@ h3 .activo {
 	font-size: 18px;
 	color: var(--verde);
 }
+/*---- ---- ---- RESPONSIVE DESING (MOBILE) ---- ---- ----*/
 @media only screen and (max-width: 980px) {
 	.banner-principal .boton {
 		margin-bottom: 10px;
@@ -369,157 +350,14 @@ h3 .activo {
 		justify-content: space-between;
 		align-items: center;
 	}
-	.fa-stream{
-		font-size: 30px;
-		color: var(--blanco);
-	}
-	.contenedor__principal{
-		justify-content: space-between;
-		padding-top: 20px;
-	}
-	.banner-principal{
-		height: 360px;
-	}
-	.banner-principal .titulo-banner {
-		font-weight: 600;
-		font-size: 30px;
-		margin-top: 0px;
-	}
-	.contenedor__scrollbar{
+	video{
 		width: 100%;
 	}
-	.contenedor__imagen {
-		width: 25%;
-		height: 150px;
-	}
-	.anime__img {
-		height: 100%;
-		width: 100%;
-		border-radius: 8px;
-	}
-	ocultar{
-		display: none;
-	}
-	mostrar{
-		display: initial;
-	}
-	.contenedor_info {
-		width: 70%;
-	}
-	.banner-principal .descripcion-banner {
-		margin-top: 30px;
-		font-size: 16px;
-		line-height: 19px;
-	}
-	.estado {
-		padding: 2px 10px;
-	}
-	.contenedor__genero{
-		width: 100%;
-	}
-	.genero {
-		margin: 5px;
-		color: var(--blanco);
-		text-decoration: none;
-		font-weight: bold;
-		padding: 1px 5px;
-		background: var(--rojo);
-		border-radius: 20px;
-	}
-}
-/* 
-.listado-capitulos {
-	margin: 20px 0px;
-}
-.listado-informacion{
-	margin: 20px 0px;
-	margin-right: 35%;
-}
-.titulos-list-info{
-	display: flex;
-	justify-content: space-between;
-}
-.fa-list-ul{
-	margin-right: 10px;
-}
-.capitulo-lista{
-	height: 400px;
-	width: 50%;
-    overflow-x: hidden;
-}
-.capitulo-lista a{
-	text-decoration: none;
-	text-align: left;
-}
-.capitulo-lista li{
-	list-style: none;
-	margin-top: 10px;
-}
-.capitulo-boton {
-	margin-top: 20px;
-	background: rgba(48, 48, 48, 0.596);
-	border: none;
-	border-radius: 4.96px;
-	padding: 14px 34%;
-    /* padding-left: 20px;
-    padding-right: 220px;
-	padding-bottom: 14px;
-	padding-top: 14px; 
+	.fa-facebook-square,
+	.fa-github,
+	.fa-twitter,
+	.fa-telegram-plane{
 	color: #fff;
-	cursor: pointer;
-	transition: .3s ease all;
-    font-size: 13px;
-	outline: inherit;
-	text-align: left;
+	font-size: 25px;
+	}
 }
-.capitulo-boton:hover{ 
-    background: #fff;
-	color: #000;
-	font-weight: bold;
-}
-/* informacion 
-.contenedor-listado {
-	position: relative;
-}
-h2.informacion-anime{
-	display: inline;
-	position: absolute;
-	bottom: 30px;
-}
-
-/*--- --- --- popup video --- --- ---
-.popup-contenido{
-    align-items: center;
-    position: relative;
-	border-radius: 8px;
-}
-.fa-times{
-	font-size: 30px;
-}
-.popup-contenido a{
-	position: absolute;
-	text-decoration: none;
-	color: var(--negro);
-	right: 120px;
-	top: 15px;
-	z-index: 200;
-}
-video{
-	width: 85.5%;
-	margin-left: 7.25%;
-	margin-right: 7.25%;
-}
-.video{
-	position: relative;
-}
-.popup{
-    background-color: rgba(0, 0, 0, 0.945);
-    position:fixed;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    opacity:0;
-    pointer-events:none;
-    transition: ease all .3s;
-} */
