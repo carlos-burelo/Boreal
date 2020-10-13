@@ -196,16 +196,16 @@ h3 .activo {
 }
 /*---- ---- ---- Backgrounds de el slider principal ---- ---- ----*/
 .slider-content1 { /*fire force */
-  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../assets/img/banners/fire_force_banner.jpg);
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../assets/img/banners/fire_force_banner.webp);
 }
 .slider-content2 { /*kimetsu */
-  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../assets/img/banners/kimetsu_no_yaiba_banner.png);
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../assets/img/banners/kimetsu_no_yaiba_banner.webp);
 }
 .slider-content3 { /*konosuba */
-  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://wallpaperset.com/w/full/3/1/9/415853.jpg);
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../assets/img/banners/konosuba_banner.webp);
 }
 .slider-content4 { /*boku no hero */
-  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://wallpapercave.com/wp/wp1874036.jpg);
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../assets/img/banners/boku_no_hero_banner.webp);
 }
 .banner-principal {
 	font-size: 16px;
