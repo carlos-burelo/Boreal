@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/img/Boreal_logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/panel.css">
+    <title>Panel de control</title>
+</head>
+<body>
+
+    <header> <!-- -- ---- ---- (titulo / menus) ---- ---- -- -->
+    <div class="contenedor">
+      <div class="header_main">
+      <img class="logo__img" src="../assets/img/Boreal_logo.png" alt="Boreal">
+    </div>
+        <nav>
+          <a href="#" class="activo">Home</a>
+          <a href="#populares">Popular</a>
+          <a href="#peliculas">Movies</a>
+          <a href="#ovas">Ovas</a>
+          <a href="#recientes">Recientes</a>
+          <a href="#">Mi Lista</a>
+          <a href="buscar">Buscar</a>
+        </nav>
+        <div class="menu_desplegable">
+          <a href="index.html"><img class="logo__img" src="../assets/img/Boreal_logo.png" alt="Boreal"></a>
+
+          <a href="#mipopup"><i class="fas fa-stream"></i></a>
+        </div>
+        <div class="popup" id="mipopup">
+          <div class="contenedor__menu">
+            <a href="#">
+            <div class="boton__cerrar_menu">
+              <a class="v" href="#"><i class="fas fa-times"></i></a>
+            </div>
+          </a>
+          <div class="popup-contenido">
+            <a href="index.html"><img class="logo__menu__img" src="../assets/img/Boreal_logo.png" alt="Boreal"></a>
+            <a href="#"><h3 class="activo">Home</h3></a>
+            <a href="buscar"><h3>Buscar</h3>
+            <a href="#"><h3>Populares</h3></a>
+            <a href="#"><h3>Peliculas</h3></a>
+            <a href="#"><h3>Ovas</h3></a>
+            <a href="#"><h3>Recientes</h3></a>
+            <a href="#"><h3>Mi lista</h3></a>
+          </div>
+        </div>
+    </div>
+  </div>
+    </header>
+
+
+        <div class="contenedor">
+            <div class="panel__control__contenedor">
+
+                <div class="panel__dashboard">
+                    <h3 class="dashboard__titulo">Herramientas</h3>
+                    <ul class="lista__dashboard">
+                        <li><button type="button" id="boton_anime" class="dashboard__elemento" onclick="subirAnime();"><i class="fas fa-upload"></i>Subir anime</button></li>
+                        <li><button type="button" id="boton_capitulo" class="dashboard__elemento" onclick="subirCapitulo();"><i class="fas fa-file-video"></i>Subir capitulo</button></li>
+                        <li><button type="button" id="boton_directorio" class="dashboard__elemento" onclick="editarDirectorios();"><i class="fas fa-folder-plus"></i>Editar directorio</button></li>
+                        <li><button type="button" id="boton_ajustes" class="dashboard__elemento" onclick="ajustes();"><i class="fas fa-cog"></i>Ajustes</button></li>
+                    </ul>
+                </div>
+                <div class="panel__control">
+                    
+                    <div class="panel__entradas" id="anime">
+                        <div class="panel__titulo_informacion__contenedor">
+                            <div class="contenedor">
+                                <div class="contenedor__principal">
+                                  
+        
+                                    <div class="contenedor__imagen">
+                                        <div class="anime__img" id="portada">
+                                        </div>
+                                        <div class="cargar__imagen">
+                                            <input type="file" name="subir_portada" id="subir_portada">
+                                            <h4 class="titulo_portada">subir portada</h4>
+                                        </div>
+                                    </div>
+                            
+                                  <div class="contenedor_info">
+                                    <form action="">
+                                      <h4 class="label">Nombre del anime</h4>
+                                      <input type="text" class="inputs " id="nombreAnime" placeholder="Ejem: Kimetsu No Yaiba">
+
+                                      <h4 class="label">Autor</h4>
+                                      <input type="text" class="inputs " id="autor" placeholder="Ejem: Koyoharu Gotōge ">
+
+                                      <h4 class="label">Fecha de lanzamiento</h4>
+                                      <input type="text" class="inputs " id="estudio" placeholder="Ejem: Primavera 2019">
+
+                                      <h4 class="label">Otros nombres</h4>
+                                      <input type="text" class="inputs " id="alternativas" placeholder="Ejem: Kny Demon Slayer">
+
+                                      <h4 class="label">Genero</h4>
+                                      <input type="text" class="inputs " id="genero" placeholder="Ejem: Demon Shonen Etc">
+
+                                      <!-- <h4 class="label">Descripcion</h4>
+                                      <textarea class="inputs descripcion" name="" id="" cols="30" rows="3"></textarea> -->
+                                      <button class="enviar__datos" type="submit" onclick='return enviarFormulario()' value='enviar'>Guardar</button>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel__entradas" id="capitulo">
+                        <div class="panel__titulo_informacion__contenedor">
+                            <h3 class="panel__titulo_informacion" id="titulo">Subir Capitulo</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="panel__entradas" id="directorio">
+                        <div class="panel__titulo_informacion__contenedor">
+                            <h3 class="panel__titulo_informacion" id="titulo">Directorio</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="panel__entradas" id="ajustes">
+                        <div class="panel__titulo_informacion__contenedor">
+                            <h3 class="panel__titulo_informacion" id="titulo">Entradas</h3>
+                            <img src="../assets/img/Boreal_logo.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    <footer>
+		<div class="footer">
+			<div class="contenedor">
+				<h2 class="logotipo">BOREAL</h2>
+				<ul class="social-list">
+					<li class="social facebook"><i class="fab fa-facebook-square"></i></li>
+					<li class="social twitter"><i class="fab fa-twitter"></i></li>
+					<li class="social github"><i class="fab fa-github"></i></li>
+					<li class="social telegram"><i class="fab fa-telegram-plane"></i></li>
+				</ul>
+				<ul class="docs-list">
+					<li class="docs">Documentacion</li>
+					<li class="docs">Repositorio</li>
+					<li class="docs">Acerca de:</li>
+				</ul>
+				<h3 class="copy">&copy; Carlos Burelo 2020</h3>
+			</div>
+		</div>
+    </footer>
+
+    <script src="../js/panel.js"></script>
+</body>
+</html>

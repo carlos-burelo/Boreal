@@ -1,371 +1,352 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<link rel="shortcut icon" href="src/img/Boreal_logo.png" type="image/x-icon">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-		<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
-		<link rel="stylesheet" href="src/css/buscar.css">
+		<link rel="shortcut icon" href="assets/img/Boreal_logo.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"crossorigin="anonymous">
+		<link rel="stylesheet" href="css/main.css">
 		<title>Buscar</title>
 	</head>
 	<body>
-		<!-- -- ---- ---- Contedor del Head ---- ---- -- -->
-		<header> <!-- -- ---- ---- (titulo / menus) ---- ---- -- -->
+		<nav class="navbar">
+			<div id="sidebar">
+			  <div class="toggle-btn">
+				<span><i class="fas fa-stream"></i></span>
+			  </div>
+			  <ul>
+				<li>
+				  <img src="assets/img/Boreal_logo.png" alt="Logo" class="logo__img">
+				</li>
+				<a href="home.html"><li>Home</li></a>
+				<a href="directorio.html"><li>Directorio</li></a>
+				<a href="#"><li>Popular</li></a>
+				<a href="#"><li>Movies</li></a>
+				<a href="#"><li>Ovas</li></a>
+				<a href="#"><li>Recientes</li></a>
+				<a href="#"><li>Mi Lista</li></a>
+			  </ul>
+			</div>
 			<div class="contenedor">
-			<img class="logo__img" src="src/img/Boreal_logo.png" alt="Boreal">
-			<nav>
-				<a href="index.html">Home</a>
-				<a href="index.html#populares">Popular</a>
-				<a href="index.html#peliculas">Movies</a>
-				<a href="index.html#ovas">Ovas</a>
-				<a href="index.html#recientes">Recientes</a>
-				<a href="#">Mi Lista</a>
-			</nav>
-			<form action="">
-				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
-			</form>
-		</div>
-			
-			
-			<div class="menu_desplegable">	  
-				<img class="logo__img__menu" src="src/img/Boreal_logo.png" alt="Boreal">
-				<a href="#mipopup"><i class="fas fa-stream"></i></a>
-			  </div>
-			  <div class="popup" id="mipopup">
-				<div class="contenedor__menu">
-				  <a href="#">
-				  <div class="boton__cerrar_menu">
-					<a class="v" href="#"><i class="fas fa-times"></i></a>
-				  </div>
-				</a>
-				<div class="popup-contenido">
-				  <a href="index.html"><img class="logo__menu__img" src="src/img/Boreal_logo.png" alt="Boreal"></a>
-				  <a href="index.html"><h3 class="activo">Home</h3></a>
-				  <a href="#"><h3>Populares</h3></a>
-				  <a href="#"><h3>Peliculas</h3></a>
-				  <a href="#"><h3><a href="#">Ovas</h3></a>
-				  <a href="#"><h3><a href="#">Recientes</h3></a>
-				  <a href="#"><h3><a href="">Mi lista</h3></a>
-				</div>
-			  </div>
-		  </div>
-		</div>
-		</header>
-		<div class="contenedor"><!-- -- ---- ---- Contenedor del los elementos ---- ---- -- -->
+			  <img src="assets/img/Boreal_logo.png" alt="Logo" class="logo__img" >
+			</div>
+		  </nav>
+
+			<div class="contenedor__busqueda">
+				
+				<form action="">
+					<h3 class="busqueda__titulo">Busque sus animes aqui</h3>
+					<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+				</form>
+			</div>
+		<div class="contenedor">
 			<section class="grid" id="grid">
 
 				<div class="item" data-etiquetas="Akame ga Kill">
 				<div class="item-contenido">
-				<img src="src/img/portadas/akame_ga_kill.jpg">
+				<img src="assets/img/portadas/akame_ga_kill.jpg">
 				<h4 class="nombre_anime">Akame ga kill</h4></div></div>
 
 				<div class="item" data-etiquetas="Amagami SS">
 				<div class="item-contenido">
-				<img src="src/img/portadas/amagami_ss.jpg">
+				<img src="assets/img/portadas/amagami_ss.jpg">
 				<h4 class="nombre_anime">Amagami SS</h4></div></div>
 
 				<div class="item" data-etiquetas="Amagami SS 2nd Season">
 				<div class="item-contenido">
-				<img src="src/img/portadas/amagami_ss_2nd.jpg">
+				<img src="assets/img/portadas/amagami_ss_2nd.jpg">
 				<h4 class="nombre_anime">Amagami SS 2nd Season</h4></div></div>
 
 				<div class="item" data-etiquetas="Ao no Exorcist">
 				<div class="item-contenido">
-				<img src="src/img/portadas/ao_no_exorsist.jpg">
+				<img src="assets/img/portadas/ao_no_exorsist.jpg">
 				<h4 class="nombre_anime">Ao No Exorcist</h4></div></div>
 
 				<div class="item" data-etiquetas="Ao no Exorcist 2nd Season">
 				<div class="item-contenido">
-				<img src="src/img/portadas/ao_no_exorsist_2nd.jpg">
+				<img src="assets/img/portadas/ao_no_exorsist_2nd.jpg">
 				<h4 class="nombre_anime">Ao no Exorcist: Kyoto Fujouou-hen</h4></div></div>
 				
 				<div class="item" data-etiquetas="Araburu Kisetsu No Otome-domo Yo">
 				<div class="item-contenido">
-				<img src="src/img/portadas/araburu_kisetsu.jpg">
+				<img src="assets/img/portadas/araburu_kisetsu.jpg">
 				<h4 class="nombre_anime">Araburu Kisetsu no Otome-domo yo</h4></div></div>
 
 				<div class="item" data-etiquetas="Arifureta Shokugyou de Sekai Saikyou">
 				<div class="item-contenido">
-				<img src="src/img/portadas/arifureta.jpg">
+				<img src="assets/img/portadas/arifureta.jpg">
 				<h4 class="nombre_anime">Arifureta Shokugyou de Sekai Saikyou</h4></div></div>
 
 				<div class="item" data-etiquetas="Assassins Pride">
 				<div class="item-contenido">
-				<img src="src/img/portadas/assasin_pride.jpg">
+				<img src="assets/img/portadas/assasin_pride.jpg">
 				<h4 class="nombre_anime">Assassins Pride</h4></div></div>
 
 				<div class="item" data-etiquetas="Bakemonogarari">
 				<div class="item-contenido">
-				<img src="src/img/portadas/bakemonogatari.jpg">
+				<img src="assets/img/portadas/bakemonogatari.jpg">
 				<h4 class="nombre_anime">Bakemonogarari</h4></div></div>
 
 				<div class="item" data-etiquetas="Big Order">
 				<div class="item-contenido">
-				<img src="src/img/portadas/big_order.jpg">
+				<img src="assets/img/portadas/big_order.jpg">
 				<h4 class="nombre_anime">Big Order</h4></div></div>
 
 				<div class="item" data-etiquetas="Black Clover">
 				<div class="item-contenido">
-				<img src="src/img/portadas/black_clover.jpg">
+				<img src="assets/img/portadas/black_clover.jpg">
 				<h4 class="nombre_anime">Black Clover</h4></div></div>
 
 				<div class="item" data-etiquetas="Boku no Hero Academia">
 				<div class="item-contenido">
-				<img src="src/img/portadas/bnha.jpg">
+				<img src="assets/img/portadas/bnha.jpg">
 				<h4 class="nombre_anime">Boku no Hero Academia</h4></div></div>
 
 				<div class="item" data-etiquetas="Boku no Hero Academia Hero Rising">
 				<div class="item-contenido">
-				<img src="src/img/portadas/bnha_hero_rising.jpg">
+				<img src="assets/img/portadas/bnha_hero_rising.jpg">
 				<h4 class="nombre_anime">Boku no Hero Academia Hero Rising</h4></div></div>
 
 				<div class="item" data-etiquetas="Boku no Hero Academia Futari no Hero">
 				<div class="item-contenido">
-				<img src="src/img/portadas/bnha_two_hero.jpg">
+				<img src="assets/img/portadas/bnha_two_hero.jpg">
 				<h4 class="nombre_anime">Boku no Hero Academia Futari no Hero</h4></div></div>
 
 				<div class="item" data-etiquetas="Boku no Hero Academia 2nd Season">
 				<div class="item-contenido">
-				<img src="src/img/portadas/bnha_2nd.jpg">
+				<img src="assets/img/portadas/bnha_2nd.jpg">
 				<h4 class="nombre_anime">Boku no Hero Academia 2nd Season</h4></div></div>
 
 				<div class="item" data-etiquetas="Boku no Hero Academia 3nd Season">
 				<div class="item-contenido">
-				<img src="src/img/portadas/bnha_3nd.jpg">
+				<img src="assets/img/portadas/bnha_3nd.jpg">
 				<h4 class="nombre_anime">Boku no Hero Academia 3nd Season</h4></div></div>
 
 				<div class="item" data-etiquetas="Boku no Hero Academia 4nd Season">
 				<div class="item-contenido">
-				<img src="src/img/portadas/bnha_4nd.jpg">
+				<img src="assets/img/portadas/bnha_4nd.jpg">
 				<h4 class="nombre_anime">Boku no Hero Academia 4nd Season</h4></div></div>
 
 				<div class="item" data-etiquetas="Bokutachi wa Benkyou ga Dekinai">
 				<div class="item-contenido">
-				<img src="src/img/portadas/bokutachi.jpg">
+				<img src="assets/img/portadas/bokutachi.jpg">
 				<h4 class="nombre_anime">Bokutachi wa Benkyou ga Dekinai</h4></div></div>
 
 				<div class="item" data-etiquetas="Bokutachi wa Benkyou ga Dekinai 2nd Season">
 				<div class="item-contenido">
-				<img src="src/img/portadas/bokutachi_2nd.jpg">
+				<img src="assets/img/portadas/bokutachi_2nd.jpg">
 				<h4 class="nombre_anime">Bokutachi wa Benkyou ga Dekinai 2nd Season</h4></div></div>
 
 				<div class="item" data-etiquetas="Bosou Shoujo Machiavellianism">
 				<div class="item-contenido">
-				<img src="src/img/portadas/bosou_shoujo.jpg">
+				<img src="assets/img/portadas/bosou_shoujo.jpg">
 				<h4 class="nombre_anime">Bosou Shoujo Machiavellianism</h4></div></div>
 
 				<div class="item" data-etiquetas="Campione">
 				<div class="item-contenido">
-				<img src="src/img/portadas/campione.jpg">
+				<img src="assets/img/portadas/campione.jpg">
 				<h4 class="nombre_anime">Campione</h4></div></div>
 
 				<div class="item" data-etiquetas="Chuunibyou Demo Koi ga Shitai">
 				<div class="item-contenido">
-				<img src="src/img/portadas/chuunibyou.jpg">
+				<img src="assets/img/portadas/chuunibyou.jpg">
 				<h4 class="nombre_anime">Chuunibyou Demo Koi ga Shitai</h4></div></div>
 
 				<div class="item" data-etiquetas="Chuunibyou Demo Koi ga Shitai 2nd Season">
 				<div class="item-contenido">
-				<img src="src/img/portadas/chuunibyou_2nd.jpg">
+				<img src="assets/img/portadas/chuunibyou_2nd.jpg">
 				<h4 class="nombre_anime">Chuunibyou Demo Koi ga Shitai 2nd Season</h4></div></div>
 
 				<div class="item" data-etiquetas="Cross Ange">
 				<div class="item-contenido">
-				<img src="src/img/portadas/cross_ange.jpg">
+				<img src="assets/img/portadas/cross_ange.jpg">
 				<h4 class="nombre_anime">Cross ange</h4></div></div>
 
 				<div class="item" data-etiquetas="Damanchi Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka">
 				<div class="item-contenido">
-				<img src="src/img/portadas/damanchi.jpg">
+				<img src="assets/img/portadas/damanchi.jpg">
 				<h4 class="nombre_anime">Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka</h4></div></div>
 
 				<div class="item" data-etiquetas="Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka II 2nd Season">
 				<div class="item-contenido">
-				<img src="src/img/portadas/damanchi_2nd.jpg">
+				<img src="assets/img/portadas/damanchi_2nd.jpg">
 				<h4 class="nombre_anime">Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka II</h4></div></div>
 
 				<div class="item" data-etiquetas="Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka: Orion no Ya">
 				<div class="item-contenido">
-				<img src="src/img/portadas/damanchi_pelicula.jpg">
+				<img src="assets/img/portadas/damanchi_pelicula.jpg">
 				<h4 class="nombre_anime">Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka: Orion no Ya</h4></div></div>
 
 				<div class="item" data-etiquetas="damanchi dungeon ni deai wo motomeru no wa machigatteiru darou ka orion no ya 3nd Season">
 				<div class="item-contenido">
-				<img src="src/img/portadas/damanchi_3nd.jpg">
+				<img src="assets/img/portadas/damanchi_3nd.jpg">
 				<h4 class="nombre_anime">Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III</h4></div></div>
 
 				<div class="item" data-etiquetas="Darling in the Franxx">
 				<div class="item-contenido">
-				<img src="src/img/portadas/darling_in_the_franxx.jpg">
+				<img src="assets/img/portadas/darling_in_the_franxx.jpg">
 				<h4 class="nombre_anime">Darling in the Franxx</h4></div></div>
 
 				<div class="item" data-etiquetas="Darwin Game">
 				<div class="item-contenido">
-				<img src="src/img/portadas/darwin_game.jpg">
+				<img src="assets/img/portadas/darwin_game.jpg">
 				<h4 class="nombre_anime">Darwin Game</h4></div></div>
 
 				<div class="item" data-etiquetas="Date a Live">
 				<div class="item-contenido">
-				<img src="src/img/portadas/date_a_live.jpg">
+				<img src="assets/img/portadas/date_a_live.jpg">
 				<h4 class="nombre_anime">Date a live</h4></div></div>
 
 				<div class="item" data-etiquetas="Date a Live 2nd Season">
 				<div class="item-contenido">
-				<img src="src/img/portadas/date_a_live_2nd.jpg">
+				<img src="assets/img/portadas/date_a_live_2nd.jpg">
 				<h4 class="nombre_anime">Date A Live 2nd Season</h4></div></div>
 
 				<div class="item" data-etiquetas="Date a Live 3nd Season">
 				<div class="item-contenido">
-				<img src="src/img/portadas/date_a_live_3nd.jpg">
+				<img src="assets/img/portadas/date_a_live_3nd.jpg">
 				<h4 class="nombre_anime">Date A Live 3nd Season </h4></div></div>
 
 				<div class="item" data-etiquetas="Date a Live Mayuri Judgment">
 				<div class="item-contenido">
-				<img src="src/img/portadas/date_a_live_mayuri_judment.jpg">
+				<img src="assets/img/portadas/date_a_live_mayuri_judment.jpg">
 				<h4 class="nombre_anime">Date A live Mayuru Judgment</h4></div></div>
 
 				<div class="item" data-etiquetas="Domestic na Kanojo">
 				<div class="item-contenido">
-				<img src="src/img/portadas/domestic_na_kanojo.jpg">
+				<img src="assets/img/portadas/domestic_na_kanojo.jpg">
 				<h4 class="nombre_anime">Domestic na Kanojo</h4></div></div>
 
 				<div class="item" data-etiquetas="Dororo">
 				<div class="item-contenido">
-				<img src="src/img/portadas/dororo.jpg">
+				<img src="assets/img/portadas/dororo.jpg">
 				<h4 class="nombre_anime">Dororo</h4></div></div>
 
 				<div class="item" data-etiquetas="Dr. Stone">
 				<div class="item-contenido">
-				<img src="src/img/portadas/dr_stone.jpg">
+				<img src="assets/img/portadas/dr_stone.jpg">
 				<h4 class="nombre_anime">Dr. Stone</h4></div></div>
 
 				<div class="item" data-etiquetas="Fate Grand Order Zettai Majuu Sensen Babylonia">
 				<div class="item-contenido">
-				<img src="src/img/portadas/fate_gran_order_babylonia.jpg">
+				<img src="assets/img/portadas/fate_gran_order_babylonia.jpg">
 				<h4 class="nombre_anime">Fate Grand Order - Zettai Majuu Sensen Babylonia</h4></div></div>
 				
 				<div class="item" data-etiquetas="Fate Stay Nitgh Unlimited Blade Works">
 				<div class="item-contenido">
-				<img src="src/img/portadas/fate_stay_night_unlimited_blade_works.jpg">
+				<img src="assets/img/portadas/fate_stay_night_unlimited_blade_works.jpg">
 				<h4 class="nombre_anime">Fate Stay Nitgh Order - Zettai Majuu Sensen Babylonia</h4></div></div>
-
-
-
-
-
 
 				<div class="item" data-etiquetas="Goblin Slayer">
 				<div class="item-contenido">
-				<img src="src/img/portadas/goblin_slayer.png">
+				<img src="assets/img/portadas/goblin_slayer.png">
 				<h4 class="nombre_anime">Goblin Slayer</h4></div></div>
 
 				<div class="item" data-etiquetas="Gokukoku no Brynhildr">
 				<div class="item-contenido">
-				<img src="src/img/portadas/gokukoku_no_brynhildr.jpg">
+				<img src="assets/img/portadas/gokukoku_no_brynhildr.jpg">
 				<h4 class="nombre_anime">Gokukoku no Brynhildr</h4></div></div>
 
 				<div class="item" data-etiquetas="Grisaia no Kajitsu">
 				<div class="item-contenido">
-				<img src="src/img/portadas/grisaia_no_kajitsu.jpg">
+				<img src="assets/img/portadas/grisaia_no_kajitsu.jpg">
 				<h4 class="nombre_anime">Grisaia no Kajitsu</h4></div></div>
 
 				<div class="item" data-etiquetas="Grisaia no Kajitsu Rauken">
 				<div class="item-contenido">
-				<img src="src/img/portadas/grisaia_no_kajitsu_rauken.jpg">
+				<img src="assets/img/portadas/grisaia_no_kajitsu_rauken.jpg">
 				<h4 class="nombre_anime">Grisaia no Kajitsu 2nd Season</h4></div></div>
 
 				<div class="item" data-etiquetas="Hagure Yuucha no Estetica">
 				<div class="item-contenido">
-				<img src="src/img/portadas/hagure_yuucha_no_estetica.jpg">
+				<img src="assets/img/portadas/hagure_yuucha_no_estetica.jpg">
 				<h4 class="nombre_anime">Hagure yuucha no Estetica</h4></div></div>
 
 				<div class="item" data-etiquetas="Haiyore! Nyaruko-san">
 				<div class="item-contenido">
-				<img src="src/img/portadas/haiyore_nyaruko-san.png">
+				<img src="assets/img/portadas/haiyore_nyaruko-san.png">
 				<h4 class="nombre_anime">Haiyore! Nyaruko-san</h4></div></div>
 
 				<div class="item" data-etiquetas="Hyakuren no Haou to Seiyaku no Valkyria">
 				<div class="item-contenido">
-				<img src="src/img/portadas/hyakuren_no_haou_to_seiyaku_no_valkyria.jpg">
+				<img src="assets/img/portadas/hyakuren_no_haou_to_seiyaku_no_valkyria.jpg">
 				<h4 class="nombre_anime">Hyakuren no Haou to Seiyaku no Valkyria</h4></div></div>
 
 				<div class="item" data-etiquetas="Highschool of the Dead">
 				<div class="item-contenido">
-				<img src="src/img/portadas/high_school_of_the_dead.jpg">
+				<img src="assets/img/portadas/high_school_of_the_dead.jpg">
 				<h4 class="nombre_anime">Highschool of the Dead</h4></div></div>
 
 				<div class="item" data-etiquetas="High School DxD">
 				<div class="item-contenido">
-				<img src="src/img/portadas/high_school_dxd.jpg">
+				<img src="assets/img/portadas/high_school_dxd.jpg">
 				<h4 class="nombre_anime">High School DxD</h4></div></div>
 
 				<div class="item" data-etiquetas="High School DxD OVA">
 				<div class="item-contenido">
-				<img src="src/img/portadas/high_school_dxd_ova.jpg">
+				<img src="assets/img/portadas/high_school_dxd_ova.jpg">
 				<h4 class="nombre_anime">High School DxD Ova</h4></div></div>
 
 				<div class="item" data-etiquetas="High School DXD New">
 				<div class="item-contenido">
-				<img src="src/img/portadas/high_school_dxd_new.jpg">
+				<img src="assets/img/portadas/high_school_dxd_new.jpg">
 				<h4 class="nombre_anime">High School DxD New</h4></div></div>
 
 				<div class="item" data-etiquetas="High School DxD Born">
 				<div class="item-contenido">
-				<img src="src/img/portadas/high_school_dxd_born.jpg">
+				<img src="assets/img/portadas/high_school_dxd_born.jpg">
 				<h4 class="nombre_anime">High School DxD Born</h4></div></div>
 
 				<div class="item" data-etiquetas="High School DxD Born Specials">
 				<div class="item-contenido">
-				<img src="src/img/portadas/high_school_dxd_born_specials.jpg">
+				<img src="assets/img/portadas/high_school_dxd_born_specials.jpg">
 				<h4 class="nombre_anime">High School DxD Born</h4></div></div>
 
 				<div class="item" data-etiquetas="High School DxD Hero Yomigaerarenai Pheonix">
 				<div class="item-contenido">
-				<img src="src/img/portadas/high_school_dxd_born_yomigaerarenai_pheonix.jpg">
+				<img src="assets/img/portadas/high_school_dxd_born_yomigaerarenai_pheonix.jpg">
 				<h4 class="nombre_anime">High School DxD Born: Yomigaerarenai Pheonix</h4></div></div>
 
 				<div class="item" data-etiquetas="High School DxD Hero">
 				<div class="item-contenido">
-				<img src="src/img/portadas/high_school_dxd_hero.jpg">
+				<img src="assets/img/portadas/high_school_dxd_hero.jpg">
 				<h4 class="nombre_anime">High School DxD Hero</h4></div></div>
-
 
 				<div class="item" data-etiquetas="Hundred">
 				<div class="item-contenido">
-				<img src="src/img/portadas/hundred.jpg">
+				<img src="assets/img/portadas/hundred.jpg">
 				<h4 class="nombre_anime">Hundred</h4></div></div>
 
 				<div class="item" data-etiquetas="Ichiban Ushiro no Daimaou">
 				<div class="item-contenido">
-				<img src="src/img/portadas/ichuban_ushiro_no_daimaou.jpg">
+				<img src="assets/img/portadas/ichuban_ushiro_no_daimaou.jpg">
 				<h4 class="nombre_anime">Ichiban Ushiro no Daimaou</h4></div></div>
 
 				<div class="item" data-etiquetas="Isekai Maou to Shoukan Shoujo no Dorei Majutsu">
 				<div class="item-contenido">
-				<img src="src/img/portadas/isekai_maou_to_shoukan_shoujo_no_dorei_majutsu.jpg">
+				<img src="assets/img/portadas/isekai_maou_to_shoukan_shoujo_no_dorei_majutsu.jpg">
 				<h4 class="nombre_anime">Isekai Maou to Shoukan Shoujo no Dorei Majutsu</h4></div></div>
 
 				<div class="item" data-etiquetas="Island">
 				<div class="item-contenido">
-				<img src="src/img/portadas/island.jpg">
+				<img src="assets/img/portadas/island.jpg">
 				<h4 class="nombre_anime">Island</h4></div></div>
 
 				<div class="item" data-etiquetas="Kekkai Sensen">
 				<div class="item-contenido">
-				<img src="src/img/portadas/kekkai_sensen.png">
+				<img src="assets/img/portadas/kekkai_sensen.png">
 				<h4 class="nombre_anime">Kekkai Sensen</h4></div></div>
 
 				<div class="item" data-etiquetas="Kimetsu no Yaiba">
 				<div class="item-contenido">
-				<img src="src/img/portadas/kimetsu_no_yaiba.jpg">
+				<img src="assets/img/portadas/kimetsu_no_yaiba.jpg">
 				<h4 class="nombre_anime">Kimetsu No Yaiba</h4></div></div>
 			</section>
 		</div>
+		
 		<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
 		<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
-		<script src="src/js/buscar.js"></script>
+		<script src="js/buscar.js"></script>
 	</body>
 </html>

@@ -5,13 +5,11 @@
 	box-sizing: border-box;
 	outline: none !important;
 }
-/*---- ---- ---- Suavidad del scroll ---- ---- ----*/
 html {
 	scroll-behavior: smooth;
 }
-/*---- ---- ---- Variables css ---- ---- ----*/
 :root{
-    --radio: 10px;
+    --radio: 5px;
     --negro: #000000;
     --blanco: #ffffff;
 	--gris: #252525;
@@ -20,16 +18,54 @@ html {
 	--rojo: #ff2020;
 	--amarillo: #ffcb22;
 	--gris-oscuro: #070707;
+	--gris-medio: #111111;
 	--celeste: #5ea78b;
 }
 a{
-    outline:none !important;
-    outline-width: 0 !important;
+    outline:none;
+    outline-width: 0;
     box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
 }
-/*---- ---- ---- color del scrollbar ---- ---- ----*/
+i{
+	font-display: fallback;
+}
+/*---- ---- ---- ---- Fonts ---- ---- ---- ----*/
+@font-face {
+font-family: 'Product Sans Regular';
+font-style: normal;
+font-weight: normal;
+font-display: fallback;
+src: local('Product Sans Regular'), url('../assets/fonts/ProductSans-Regular.woff') format('woff');
+}
+@font-face {
+font-family: 'Product Sans Light Regular';
+font-style: normal;
+font-weight: normal;
+font-display: fallback;
+src: local('Product Sans Light Regular'), url('../assets/fonts/ProductSans-Light.woff') format('woff');
+}
+@font-face {
+font-family: 'Product Sans Medium Regular';
+font-style: normal;
+font-weight: normal;
+font-display: fallback;
+src: local('Product Sans Medium Regular'), url('../assets/fonts/ProductSans-Medium.woff') format('woff');
+}
+@font-face {
+font-family: 'Product Sans Black Regular';
+font-style: normal;
+font-weight: normal;
+font-display: fallback;
+src: local('Product Sans Black Regular'), url('../assets/fonts/ProductSans-Black.woff') format('woff');
+}
+@font-face {
+font-family: 'Product Sans Bold';
+font-style: normal;
+font-weight: normal;
+font-display: fallback;
+src: local('Product Sans Bold'), url('../assets/fonts/ProductSans-Bold.woff') format('woff');
+}
+/*---- ---- ---- ---- Scrollbar para escritorio (*.html) ---- ---- ---- ----*/
 ::-webkit-scrollbar {
 	background: var(--negro);
 	border-radius: 4px;
@@ -53,11 +89,11 @@ a{
 }
 /*---- ---- ---- Body ---- ---- ----*/
 body{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Product Sans Regular';
 	background: var(--negro);
 	color: var(--blanco);
 }
-/*---- ---- ---- contenedor principal ---- ---- ----*/
+/*---- ---- ---- ---- Contenedores (*.html) ---- ---- ---- ----*/
 .contenedor {
 	width: 95%;
 	margin: auto;
@@ -66,146 +102,86 @@ body{
 	width: 96.5%;
 	margin: auto;
 }
-
 header .contenedor {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-/*---- ---- ---- MENU PARA DISPOSITIVOS MOVILES ---- ---- ----*/
-.menu_desplegable{
-	width: 100%;
-	padding: 10px 10px;
-	display: none;
-}
-.contenedor__menu{
+/*---- ---- ---- ---- Navbar para dispositivos moviles ---- ---- ---- ----*/
+#sidebar {
+	position: fixed;
+	width: 200px;
 	height: 100%;
-	transition-delay: 2s;
+	background: var(--negro);
+	right: -200px;
+	transition: all .4s linear;
+	z-index: 200;
 }
-.logo__menu__img{
-	margin: 20px 30px;
-	height: 40px;
-	width: 40px;
+.logo__img{
+	width: 50px;
+	height: 50px;
+	margin: 5px;
 }
-.popup-contenido {
-    /* align-items: center; */
-    background-color: var(--negro);
-    color: var(--letras-black);
-    width: 50%;
-    height: 100%;
-    /* margin: 14px -0px 0px 129px; */
-    position: relative;
-	border-radius: 8px;
-	float: right;
+#sidebar.active {
+	right: 0px;
 }
-.popup-contenido a .activo{
-	color: var(--verde);
-}
-.popup-contenido h3{
-    color: #ffffff;
-    text-decoration: none;
-    background-color:var(--gris-oscuro);
-    padding: 10px 30px;
-    margin: 5px;
+#sidebar ul li {
+	color: var(--azul);
+	list-style: none;
+	padding: 15px 10px;
+	margin: 10px 0px;
 	border-radius: 5px;
-	text-align: initial;
-}
-.popup-contenido h3:hover{
-	background: var(--verde);
-	color: #000000;
-}
-.popup-contenido a{
-    text-decoration: none;
-    color: #ffffff;
-}
-.popup-contenido h3 a:hover{
-    text-decoration: none;
-    color: #000000;
-}
-.popup-contenido h3:hover .popup-contenido a{
-	color: #000000;
-}
-.popup{
-    background-color: rgba(0,0,0,.5);
-    position:fixed;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    opacity:0;
-    pointer-events:none;
-    transition: ease all .3s;
-}
-#mipopup:target{
-    opacity:1;
-    z-index: 200;
-    pointer-events:auto;
-}
-.boton__cerrar_menu {
-    /* margin: 15px 10px; */
-    width: 50%;
-    height: 100%;
-    color: var(--blanco);
-	float: left;
-
-    /* background: lightseagreen; */
-}
-.boton__cerrar_menu i{
-	width: 100%;
-	height: 100%;
-	color: transparent;
-}
-/* logotipo */
-.logotipo{
-	color: var(--verde)
-}
-header .logo__img{
-	height: 40px;
-	width: 40px;
-}
-header .logotipo {
-    font-family: 'Balsamiq Sans', cursive;
-	font-weight: normal;
-	color: var(--celeste);
-	margin: 5px 0px 0px 5px;
-	font-size: 40px;
-}
-header nav a {
-	color: #666666;
+	text-align: center;
 	text-decoration: none;
-    margin-right: 20px;
-    font-weight: bold;
+	background-color: var(--gris-medio);
 }
-header nav a:hover{
-    color: #ffffff;
-    transition: 0.4s;
+#sidebar ul li:hover {
+	transition: linear .3s;
+	background: var(--gris);
+	color: var(--blanco);
 }
-header nav a.activo {
-	color: var(--verde);
+#sidebar ul a {
+	text-decoration: none;
+}
+#sidebar ul a li {
+	text-decoration: none;
+	color: var(--blanco);
+}
+#sidebar .toggle-btn {
+	position: absolute;
+	right: 230px;
+	top: 15px;
+	cursor: pointer;
+} 
+#sidebar .toggle-btn span {
+	display: block;
+	width: 40px;
+	text-align: center;
+	font-size: 30px;
 }
 h3 .activo {
 	color: var(--verde);
 }
 /*---- ---- ---- Slider principal ---- ---- ----*/
-.slider { /*---- ---- ---- proporciones del slider ---- ---- ----*/
+.slider {
 	width: 95%;
 	margin: auto;
 	overflow: hidden;
 }
-.slider ul { /*---- ---- ---- slider en formato lista*/
+.slider ul {
 	display: flex;
 	padding: 0;
 	width: 400%;
 	animation: cambio 20s infinite alternate linear;
 }
-.slider img { /*---- ---- ---- imagenes dentro del slider*/
+.slider img {
 	width: 100%;
 }
-.slider li { /*---- ---- ---- elememntos dentro del slider*/
+.slider li {
 	width: 100%;
 	list-style: none;
 }
-@keyframes cambio { /*---- ---- ---- animacion del slider*/
+@keyframes cambio {
 	0% {margin-left: 0;}
 	20% {margin-left: 0;}
 	
@@ -220,10 +196,10 @@ h3 .activo {
 }
 /*---- ---- ---- Backgrounds de el slider principal ---- ---- ----*/
 .slider-content1 { /*fire force */
-  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://image.photocnc.com/aoaodcom/2019-09/15/201909150644144849.png.w1152.h864.jpg?down);
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../assets/img/banners/fire_force_banner.jpg);
 }
 .slider-content2 { /*kimetsu */
-  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://i.pinimg.com/originals/88/eb/5c/88eb5cc2fcebaeb2bd76987a4ca4ad2b.png);
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../assets/img/banners/kimetsu_no_yaiba_banner.png);
 }
 .slider-content3 { /*konosuba */
   background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://wallpaperset.com/w/full/3/1/9/415853.jpg);
@@ -231,7 +207,7 @@ h3 .activo {
 .slider-content4 { /*boku no hero */
   background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://wallpapercave.com/wp/wp1874036.jpg);
 }
-.banner-principal { /*---- ---- ---- estructura del contenido del slider ---- ---- ----*/
+.banner-principal {
 	font-size: 16px;
 	height: 500px;
 	color: #fff;
@@ -240,23 +216,23 @@ h3 .activo {
 	display: flex;
 	align-items: end;
 }
-.banner-principal .contenedor { /*---- ---- ---- margenes del contenedor del slider ---- ---- ----*/
+.banner-principal .contenedor {
 	margin: 1 auto;
 	margin-bottom: 100px;
 }
-.banner-principal .titulo-banner { /*---- ---- ---- Titulo del Slider (anime) ---- ---- ----*/
+.banner-principal .titulo-banner {
 	font-weight: 600;
 	font-size: 50px;
 	margin-bottom: 20px;
 }
-.banner-principal .descripcion-banner { /*---- ---- ---- descripcion del slider (anime) ---- ---- ----*/
+.banner-principal .descripcion-banner {
 	font-weight: normal;
 	font-size: 16;
 	line-height: 28px;
 	max-width: 50%;
 	margin-bottom: 20px;
 }
-.banner-principal .boton {  /*---- ---- ---- Botones de reproduccion del slider ---- ---- ----*/
+.banner-principal .boton {
 	background: rgba(0,0,0, 0.5);
 	border: none;
 	border-radius: 4.96px;
@@ -268,31 +244,12 @@ h3 .activo {
     font-size: 17.92px;
     outline: inherit;
 }
-.banner-principal .boton:hover { /*---- ---- ---- Hover de los botones de reproduccion del slider ---- ---- ----*/
+.banner-principal .boton:hover {
 	background: #fff;
 	color: #000;
 }
-.banner-principal .boton i { /*---- ---- ---- margen de los iconos de los botones del slider  ---- ---- ----*/
+.banner-principal .boton i {
 	margin-right: 20px;
-}
-@media screen and (max-width: 800px) { /*---- ---- ---- Media jquerys del header ---- ---- ----*/
-	header .logotipo {
-		margin-bottom: 10px;
-		font-size: 30px;
-	}
-
-	header .contenedor {
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.banner-principal {
-		font-size: 14px;
-	}
-
-	.banner-principal .descripcion-banner {
-		max-width: 100%;
-	}
 }
 /*---- ---- ---- propiedades de categorias ---- ---- ----*/
 .categorias{
@@ -313,33 +270,30 @@ h3 .activo {
 	color: var(--rojo);
 }
 /*---- ---- ---- Iconos de las categorias ---- ---- ----*/
-.fa-play,
-.fa-video,
-.fa-star,
-.fa-clock{
+.fa-play,.fa-video,.fa-star,.fa-clock{
 	margin-right: 15px;
 	margin-left: 32px;
 }
 /*---- ---- ---- carrusel para las categorias ---- ---- ----*/
-.carousel {
+.carrusel {
 	width: 100%;
 	overflow: hidden;
 	position: relative;
 	box-sizing: border-box;
 }
-.carousel__container {
+.carrusel__container {
 	white-space: nowrap;
 	position: relative;
 	width: 96%;
 	margin: auto;
 }
-.carousel__lista {
+.carrusel__lista {
 	overflow: hidden;
 }
-.carousel__elemento {
+.carrusel__elemento {
 	text-align: center;
 }
-.carousel__item {
+.carrusel__item {
 	width: 200px;
 	height: 250px;
 	border-radius: var(--radio);
@@ -351,25 +305,24 @@ h3 .activo {
 	transform-origin: center;
 	position: relative;
 }
-.carousel__container:hover .carousel__item {
+.carrusel__container:hover .carrusel__item {
 	opacity: 0.3;
 }
-.carousel__container:hover .carousel__item:hover {
+.carrusel__container:hover .carrusel__item:hover {
 	transform: scale(1.1);
 	opacity: 1;
 }
-.carousel__item__img {
+.carrusel__item__img {
 	width: 150px;
 	height: 230px;
 	object-fit: cover;
 }
-.carousel__item:hover {
+.carrusel__item:hover {
 	transition: all .4s;
 	transform: scale(1.1);
 	border-radius: var(--radio);
 }
-
-.carousel__item__details {
+.carrusel__item__details {
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
 	font-size: 10px;
 	color: white;
@@ -389,36 +342,32 @@ h3 .activo {
 	align-items: center;
 	justify-content: flex-end;
 }
-.carousel__item__details:hover {
+.carrusel__item__details:hover {
 	opacity: 1;
 }
-.carousel__item__details--title {
+.carrusel__item__detalles__titulo {
    font-size: 15px;
 }
-.carousel::-webkit-scrollbar {    
+.carrusel::-webkit-scrollbar {    
 	height: 10px;
 	overflow-y: hidden;
 } 
-.carousel::-webkit-scrollbar-track {
+.carrusel::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1); 
 	border-radius: 8px;
 	overflow: hidden;
 }
-.carousel::-webkit-scrollbar-track-piece {
+.carrusel::-webkit-scrollbar-track-piece {
 	max-width: 100px;
 	overflow: hidden;
 }
-.carousel::-webkit-scrollbar-thumb {
+.carrusel::-webkit-scrollbar-thumb {
 	border-radius: 8px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 	background-color: gray;
 	overflow: hidden;  
 }
-
-.carousel__anterior1,
-.carousel__anterior2,
-.carousel__anterior3,
-.carousel__anterior4 {
+.anterior1,.anterior2,.anterior3,.anterior4 {
     float: left;
 	left: 20px;
 	padding:114px 4px;
@@ -427,10 +376,7 @@ h3 .activo {
 	border: none;
 	outline: none;
 }
-.carousel__siguiente1,
-.carousel__siguiente2,
-.carousel__siguiente3,
-.carousel__siguiente4{
+.siguiente1,.siguiente2,.siguiente3,.siguiente4{
 	float: right;
 	margin-left: -1px;
 	padding: 114px 4px;
@@ -439,20 +385,13 @@ h3 .activo {
 	border: 0px solid;
 	outline: none;
 }
-.carousel__siguiente1:hover,
-.carousel__siguiente2:hover,
-.carousel__siguiente3:hover,
-.carousel__siguiente4:hover,
-.carousel__anterior1:hover,
-.carousel__anterior2:hover,
-.carousel__anterior3:hover,
-.carousel__anterior4:hover{
+.siguiente1:hover,.siguiente2:hover,.siguiente3:hover,.siguiente4:hover,
+.anterior1:hover,.anterior2:hover,.anterior3:hover,.anterior4:hover{
 	transition: all .3s;
 	color: var(--verde);
 	background-color: var(--gris-oscuro);
 }
 /*---- ---- ---- bonones de los animes ---- ---- ----*/
-
 .card-boton .fa-play{
 	margin: 0;
 	margin-right: 4px;
@@ -476,7 +415,6 @@ h3 .activo {
     background: #8b8b8b4f;
 	color: rgb(255, 255, 255);
 }
-
 .listado-capitulos{
   margin-bottom: 20px;
   max-height: 400px;
@@ -509,35 +447,14 @@ h3 .activo {
 .social-list li{
 	margin: 0px 10px;
 }
-.fa-facebook-square,
-.fa-github,
-.fa-twitter,
-.fa-telegram-plane{
+.fa-facebook-square,.fa-github,.fa-twitter,.fa-telegram-plane{
 	margin-right: 5px;
 	font-size: 30px;
 }
-/* .facebook{
-	color: #3b5998;
-}
-.github{
-	color: #333;
-}
-.twitter{
-	color: #1da1f2;
-}
-.telegram{
-	color: #0088cc;
-} */
-.fa-facebook-square,
-.fa-github,
-.fa-twitter,
-.fa-telegram-plane{
+.fa-facebook-square,.fa-github,.fa-twitter,.fa-telegram-plane{
 	color: #fff;
 }
-.fa-facebook-square:hover,
-.fa-github:hover,
-.fa-twitter:hover,
-.fa-telegram-plane:hover{
+.fa-facebook-square:hover,.fa-github:hover,.fa-twitter:hover,.fa-telegram-plane:hover{
 	color: var(--azul);
 	transition: all .4s;
 	transform: scale(1.3);
@@ -547,21 +464,10 @@ h3 .activo {
 	font-size: 18px;
 	color: var(--verde);
 }
-/*---- ---- ---- RESPONSIVE DESING (MOBILE) ---- ---- ----*/
+/*---- ---- ---- Responsive design (home.html) ---- ---- ----*/
 @media only screen and (max-width: 980px) {
 	.banner-principal .boton {
 		margin-bottom: 10px;
-	}
-	nav{
-		display: none;
-	}
-	.header_main{
-		display: none;
-	}
-	header .contenedor .menu_desplegable{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
 	}
 	.fa-stream{
 		font-size: 30px;
@@ -586,5 +492,128 @@ h3 .activo {
 		transition: .3s ease all;
 		font-size: 14px;
 		outline: inherit;
+	}
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+	.banner-principal {
+		font-size: 14px;
+	}
+	.banner-principal .descripcion-banner {
+		max-width: 100%;
+	}
+	.anterior1,
+	.anterior2,
+	.anterior3,
+	.anterior4,
+	.siguiente1,
+	.siguiente2,
+	.siguiente3,
+	.siguiente4{
+		display: none;
+	}
+}
+
+/*---- ---- ---- ---- Buscar.html ---- ---- ---- ----*/
+.contenedor__busqueda{
+	width: 100%;
+	margin-bottom: 20px;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.busqueda__titulo{
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 25px;
+}
+.grid {
+	position: relative;
+	width: 100%;
+	opacity: 0;
+}
+.mostrar__grid{
+	transition: linear .4s;
+	opacity: 1;
+}
+.grid .item {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 5px;
+	width: 13.5%;
+	color: var(--blanco);
+}
+.grid .item-contenido {
+	position: relative;	
+}
+.grid .item img {
+	width: 100%;
+	height: 250px;
+	cursor: pointer;
+	vertical-align: top;
+	border-radius: 5px;
+}
+.grid:hover .item img:hover{
+	transition: all .3s;
+}
+.contenedor__busqueda__elementos{
+	margin-top: 30px;
+}
+.barra-busqueda {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: #1f1f1f;
+	padding: 0px 20px;
+	color: #fff;
+	border-radius: 10px;
+	border: none;
+	text-align: left;
+	font-size: 16px;
+	outline: none;
+}
+.nombre_anime{
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+	font-size: 14px;
+	color: white;
+	opacity: 0;
+	transition: 450ms opacity;
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	white-space: normal;
+	display: flex;
+	flex-flow: row wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.nombre_anime:hover {
+	opacity: 1;
+	transition: all .3s;
+}
+/*---- ---- ---- ---- Responsive desing (buscar.html) ---- ---- ---- ----*/
+@media only screen and (max-width: 768px) {
+	.grid .item {
+		width: 31.33333%;
+		margin: 2px;
+	}
+	.grid .item img{
+		height: 170px;
+	}
+	.nombre_anime{
+		font-size: 11.2px;
+		flex-flow: column;
+	}
+	.contenedor__busqueda__elementos{
+		margin-top: 30px;
 	}
 }

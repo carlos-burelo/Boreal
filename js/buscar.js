@@ -7,7 +7,16 @@ const grid = new Muuri('.grid', {
 window.addEventListener('load', () => {
 	grid.refreshItems().layout();
 // 	document.getElementById('grid').classList.add('imagenes-cargadas');
-	
+
+
+// sidebar toggle
+const btnToggle = document.querySelector('.toggle-btn');
+
+btnToggle.addEventListener('click', function () {
+  console.log('clik')
+  document.getElementById('sidebar').classList.toggle('active');
+  console.log(document.getElementById('sidebar'))
+});
 
 	// los listener de los enlaces para filtrar por categoria.
 	const enlaces = document.querySelectorAll('#categorias a');
@@ -26,6 +35,7 @@ window.addEventListener('load', () => {
 	document.querySelector('#barra-busqueda').addEventListener('input', (evento) => {
 		const busqueda = evento.target.value;
 		grid.filter( (item) => item.getElement().dataset.etiquetas.includes(busqueda) );
+		document.getElementById('grid').classList.add('mostrar__grid');
 	});
 
 	// listener para las imagenes
