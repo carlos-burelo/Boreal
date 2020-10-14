@@ -264,7 +264,16 @@ header .contenedor {
 	font-weight: bold;
     outline: inherit;
 }
-
+@media only screen and (max-width: 980px) {
+	.contenedor__usuarios {
+		margin: 60% 0;
+	}
+	.cuenta {
+		height: 100px;
+		padding: 0px 3px;
+		margin: 0;
+	}	
+}
 /*---- ---- ---- Slider principal ---- ---- ----*/
 .slider {
 	width: 95%;

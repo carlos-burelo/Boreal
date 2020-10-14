@@ -51,7 +51,7 @@ function validarCuenta(){
     else{
         mensajesError.push('Datos inconrrectos');
         error.innerHTML = mensajesError.join(', ');
-        window.location = ("https://i.pinimg.com/736x/0c/59/44/0c594470f950c6c4f703cbec2c9b485b.jpg");
+        // window.location = ("https://i.pinimg.com/736x/0c/59/44/0c594470f950c6c4f703cbec2c9b485b.jpg");
     }
     return false;
 }
