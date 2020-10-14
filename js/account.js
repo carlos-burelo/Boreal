@@ -7,18 +7,18 @@ btnToggle.addEventListener('click', function () {
 // INgresando a ala cuenta y guardando datos en 
 function ingresarCarlos(){
     localStorage.setItem('cuenta','carlos');
-    window.location=("ingresar.html");   
+    window.location=("ingresar");   
 }
 function ingresarEliud(){
-    window.location=("ingresar.html");
+    window.location=("ingresar");
     localStorage.setItem('cuenta','eliud');
 }
 function ingresarFernando(){
-    window.location=("ingresar.html");
+    window.location=("ingresar");
     localStorage.setItem('cuenta','fernando');
 }
 function ingresarManrique(){
-    window.location=("ingresar.html");
+    window.location=("ingresar");
     localStorage.setItem('cuenta','manrique');
 }
 
@@ -52,19 +52,19 @@ function validarCuenta(){
     console.log('Enviando Formulario...');
     if(user.value === 'CarlosBurelo' && pass.value === 'carlos31' ){
         console.log('Ingresando como Carlos...');
-        window.location=("home.html");
+        window.location=("home");
     }
     if(user.value === 'Eliud' && pass.value === 'eliud12' ){
         console.log('Ingresando como Eliud...');
-        window.location=("home.html");
+        window.location=("home");
     }
     if(user.value === 'Fernando' && pass.value === 'fernandojoestar' ){
         console.log('Ingresando como Fernando...');
-        window.location=("home.html");
+        window.location=("home");
     }
     if(user.value === 'Manrique' && pass.value === 'manriquejanro' ){
         console.log('Ingresando como Manrique...');
-        window.location=("home.html");
+        window.location=("home");
     }
     return false;
 }

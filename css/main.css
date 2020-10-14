@@ -593,6 +593,9 @@ header .contenedor {
 	.banner-principal .boton {
 		margin-bottom: 10px;
 	}
+	#sidebar .toggle-btn {
+		right: 212px;
+	}
 	.fa-stream{
 		font-size: 30px;
 		color: var(--blanco);
