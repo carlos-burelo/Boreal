@@ -9,7 +9,8 @@ html {
 	scroll-behavior: smooth;
 }
 :root{
-    --radio: 5px;
+	--radio: 5px;
+	--radio-2: 10px;
     --negro: #000000;
     --blanco: #ffffff;
 	--gris: #252525;
@@ -18,6 +19,7 @@ html {
 	--rojo: #ff2020;
 	--amarillo: #ffcb22;
 	--gris-oscuro: #070707;
+	--gris-oscuro-2: #0c0c0c;
 	--gris-medio: #111111;
 	--celeste: #5ea78b;
 }
@@ -98,10 +100,6 @@ body{
 	width: 95%;
 	margin: auto;
 }
-.contenedor2 {
-	width: 96.5%;
-	margin: auto;
-}
 header .contenedor {
 	display: flex;
 	justify-content: space-between;
@@ -116,6 +114,7 @@ header .contenedor {
 	right: -200px;
 	transition: all .4s linear;
 	z-index: 200;
+	padding: 0px 5px;
 }
 .logo__img{
 	width: 50px;
@@ -144,6 +143,7 @@ header .contenedor {
 	text-decoration: none;
 }
 #sidebar ul a li {
+	font-family: 'Product Sans Black Regular';
 	text-decoration: none;
 	color: var(--blanco);
 }
@@ -159,9 +159,112 @@ header .contenedor {
 	text-align: center;
 	font-size: 30px;
 }
-h3 .activo {
-	color: var(--verde);
+/*---- ---- ---- ---- Configuraciones (index.html) ---- ---- ---- ----*/
+.contenedor__usuarios{
+	height: 100%;
+	height: 100%;
+	margin: 16.5% 0;
 }
+.contenedor__cuentas{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.cuenta{
+	width: 100px;
+	height: 100px;
+	justify-content: center;
+	align-items: center;
+	background-position: center center;
+	margin: 0 10px;
+}
+.cuenta img {
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	border-radius: var(--radio);
+}
+.cuenta img:hover {
+	transition: ease all .4s;
+	transform: scale(1.15);
+}
+.usuarios{
+	margin: 0;
+}
+.nombre__cuenta{
+	text-align: center;
+}
+/*---- ---- ---- ---- Confirguraciones (registrar.html) ---- ---- ---- ----*/
+
+.carlos::before{
+	content: "Carlos";
+	text-align: center;
+}
+.fernando::before{
+	content: "Fernando";
+	text-align: center;
+}
+.eliud::before{
+	content: "Eliud";
+	text-align: center;
+}
+.manrique::before{
+	content: "Manrique";
+	text-align: center;
+}
+.contenedor__ingresar__cuenta h4{
+	font-size: 25px;
+    width: 100%;
+    text-align: center;
+}
+.contenedor__ingresar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.contenedor__ingresar__cuenta {
+	width: 320px;
+	height: auto;
+	background: var(--gris-oscuro-2);
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	border-radius: var(--radio-2);
+	padding: 70px 30px;
+} 
+.contenedor__ingresar__cuenta .avatar {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+.contenedor__ingresar__cuenta label {
+	margin: 5px 0;
+	padding: 0;
+	font-weight: bold;
+	display: block;
+}
+.boton{
+    margin-top: 10px;
+	background: var(--azul);
+	border: none;
+	border-radius: 4.96px;
+	padding: 12px 28px;
+	color: #fff;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 15px;
+	font-weight: bold;
+    outline: inherit;
+}
+
 /*---- ---- ---- Slider principal ---- ---- ----*/
 .slider {
 	width: 95%;
@@ -272,7 +375,6 @@ h3 .activo {
 /*---- ---- ---- Iconos de las categorias ---- ---- ----*/
 .fa-play,.fa-video,.fa-star,.fa-clock{
 	margin-right: 15px;
-	margin-left: 32px;
 }
 /*---- ---- ---- carrusel para las categorias ---- ---- ----*/
 .carrusel {
@@ -463,6 +565,8 @@ h3 .activo {
 	text-align: center;
 	font-size: 18px;
 	color: var(--verde);
+	font-weight: 600;
+	font-family: 'Product Sans Light Regular';
 }
 /*---- ---- ---- Responsive design (home.html) ---- ---- ----*/
 @media only screen and (max-width: 980px) {
