@@ -739,3 +739,154 @@ header .contenedor {
 		margin-top: 30px;
 	}
 }
+
+/*---- ---- ---- ---- Contenedor de las paginas de anime ---- ---- ---- ----*/
+.contenedor__principal__anime{
+	display: flex;
+	justify-content: initial;
+	align-items: initial;
+	height: 100%;
+}
+.contenedor__navegacion{
+	width: 100%;
+	margin: 10px 0px;
+	background: var(--gris-medio);
+	padding: 8px ;
+	border-radius: var(--radio);
+	align-items: center;
+}
+.contenedor__navegacion a{
+	text-decoration: none;
+	color: var(--blanco);
+	margin: 0px 10px
+}
+.contenedor__navegacion i{
+	vertical-align: middle;
+}
+/*---- ---- ---- ---- Primer sector (Label) ---- ---- ---- ----*/
+.contenedor__categorias__anime{
+	width: 20%;
+	background-color: var(--gris-oscuro);
+	border-radius: var(--radio-2);
+}
+.menu__categorias li {
+	list-style: none;
+	padding: 40px 20px;
+	font-size: 20px;
+}
+.menu__categorias a{
+	text-decoration: none;
+	color: var(--blanco);
+}
+/*---- ---- ---- ---- Segundo sector (Ficha) ---- ---- ---- ----*/
+.contenedor__ficha__anime{
+	width: 58%;
+	height: 100%;
+	padding: 20px;
+}
+.tipo{
+	font-size: 18px;
+	color: var(--azul);
+}
+.titulo__anime__banner{
+	font-size: 50px;
+}
+.titulo__alternativo__banner{
+	margin-bottom: 15px;
+}
+.calificacion i{
+	color: var(--amarillo);
+}
+.titulo__temporada{
+	width: 62%;
+	display: flex;
+	justify-content: space-between;
+}
+.descripcion__anime{
+	width: auto;
+}
+.descripcion__anime__banner{
+	font-weight: 600;
+}
+.contenedor__generos{
+	margin-top: 30px;
+	width: 90%;
+}
+.temporada__fecha{
+	color: var(--azul);
+}
+.genero{
+	padding: 10px 20px;
+	background: var(--gris);
+	border-radius: 40px;
+	text-decoration: none;
+	color: var(--blanco);
+	margin: 0px 5px;
+}
+.genero:hover{
+	transition: all .4s;
+	background: var(--azul);
+}
+.botonera{
+	margin: 10px 0px;
+}
+.botonera .boton {
+	background: #00000060;
+	border: none;
+	border-radius: 4.96px;
+	padding: 14.88px 29.92px;
+	color:var(--blanco);
+	margin-right: 20px;
+	cursor: pointer;
+	transition: .3s ease all;
+    font-size: 17.92px;
+    outline: inherit;
+}
+.botonera .fa-plus{
+	margin-right: 15px;
+}
+.botonera .boton:hover{
+	background-color: var(--blanco);
+	color: var(--negro)
+}
+/*---- ---- ---- ---- Tercer sector (banner) ---- ---- ---- ----*/
+.banner__anime {
+	height: 550px;
+	display: flex;
+	width: 100%;
+}
+
+@media only screen and (max-width: 980px) {
+	.contenedor__categorias__anime{
+		display: none;
+	}
+	.titulo__anime__banner{
+		font-size: 30px;
+	}
+	.contenedor__ficha__anime{
+		width: 100%;
+		padding: 10px;
+	}
+	.calificacion{
+		margin-bottom: 8px;
+	}
+	.contenedor__generos {
+		margin-top: 20px;
+		width: 100%;
+		display: flex;
+		overflow: hidden;
+	}
+	.background__img {
+		background-position: initial;
+	}
+	.banner__anime {
+		height: 440px;
+	}
+	ocultar{
+		display: none;
+	}
+	.botonera .boton {
+		margin: 0;
+		padding: 10px 20px;
+	}
+}

@@ -6,97 +6,92 @@
 	<link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
 	<link href="../../img/Boreal_logo.webp" rel="shortcut icon" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-	<link href="../../css/anime.css" rel="stylesheet">
+	<link href="../../css/main.css" rel="stylesheet">
 	<title>Kimetsu no Yaiba</title>
 </head>
 <body>
-	<header> <!-- -- ---- ---- (titulo / menus) ---- ---- -- -->
+	<nav class="navbar">
+		<div id="sidebar">
+		  <div class="toggle-btn">
+		  <span><i class="fas fa-stream"></i></span>
+		  </div>
+		  <ul>
+			<li class="cuenta__actual">
+			  <img src="" alt="Logo" id="avatar" class="logo__img">
+			  <h4 id="username" class="username"></h4>
+			</li>
+			<a href="../../home.html"><li>Home</li></a>
+			<a href="../../directorio.html"><li>Directorio</li></a>
+			<a href="#"><li>Popular</li></a>
+			<a href="#"><li>Movies</li></a>
+			<a href="#"><li>Ovas</li></a>
+			<a href="#"><li>Recientes</li></a>
+			<a href="#"><li>Mi Lista</li></a>
+			</ul>
+		  </div>
 		<div class="contenedor">
-		  <div class="header_main">
-		  <h2 class="logotipo"><img class="logo__img" src="../../img/Boreal_logo.webp" alt="Boreal"></h2>
+		  <img src="../../assets/img/Boreal_logo.webp" alt="Logo" class="logo__img">
 		</div>
-			<nav>
-			  <a href="../../../index.html" class="activo">Home</a>
-			  <a href="../../../index.html#populares">Popular</a>
-			  <a href="../../../index.html#peliculas">Movies</a>
-			  <a href="../../../index.html#ovas">Ovas</a>
-			  <a href="../../../index.html#recientes">Recientes</a>
-			  <a href="../../../index.html#mi_lista">Mi Lista</a>
-			  <a href="../../../buscar.html">Buscar</a>
-			</nav>
-			<div class="menu_desplegable">
-			  <a href="../../../index.html"><img class="logo__img" src="../../img/Boreal_logo.webp" alt="Boreal"></a>
-	
-			  <a href="#menu"><i class="fas fa-stream"></i></a>
-			</div>
-			<div class="popup" id="menu">
-			  <div class="contenedor__menu">
-				<a href="#">
-				<div class="boton__cerrar_menu">
-				  <a class="v" href="#"><i class="fas fa-times"></i></a>
-				</div>
-			  </a>
-			  <div class="popup-contenido">
-				<a href="../../../index.html"><img class="logo__menu__img" src="../../img/Boreal_logo.webp" alt="Boreal"></a>
-				<a href="../../../index.html"><h3 class="activo">Home</h3></a>
-				<a href="../../../buscar.html"><h3>Buscar</h3>
-				<a href="../../../index.html#populares"><h3>Populares</h3></a>
-				<a href="../../../index.html#peliculas"><h3>Peliculas</h3></a>
-				<a href="../../../index.html#ovas"><h3>Ovas</h3></a>
-				<a href="../../../index.html#recientes"><h3>Recientes</h3></a>
-				<a href="../../../index.html#mli_lista"><h3>Mi lista</h3></a>
-			  </div>
-			</div>
+	</nav>
+	<div class="contenedor">
+		<div class="contenedor__navegacion">
+			<a href="#">animes</a><i class="fas fa-caret-right"></i><a href="#">kimetsu no yaiba</a>
 		</div>
-	  </div>
-	</header>
-		<div class="banner-principal anime_banner">
-			<style>.anime_banner{
-				background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 50%), url(https://i.pinimg.com/originals/88/eb/5c/88eb5cc2fcebaeb2bd76987a4ca4ad2b.png);
-				background-position: center center;
-				background-size: cover;
-				}
-			</style>
-			<div class="contenedor">	
-				<div class="contenedor__principal">
-					<div class="contenedor__imagen">
-						<img class="anime__img" src="../../img/portadas/kimetsu_no_yaiba.jpg">
+		<div class="contenedor__principal__anime">
+			
+			<div class="contenedor__categorias__anime">
+				<ul class="menu__categorias">
+					<a href="#"><li>Populares</li></a>
+					<a href="#"><li>En Emision</li></a>
+					<a href="#"><li>Peliculas</li></a>
+					<a href="#"><li>Ovas</li></a>
+				</ul>
+			</div>
+
+			
+			<div class="banner__anime background__img">
+
+				<div class="contenedor__ficha__anime">
+					<h4 class="tipo">Serie</h4>
+					<h1 class="titulo__anime__banner">Kimetsu no Yaiba</h1>
+					<div class="titulo__temporada">
+						<h3 class="titulo__alternativo__banner">Demon Slayer</h3>
+						<h3 class="temporada__fecha">2019</h3>
 					</div>
-					<div class="contenedor_info">
-						<h3 class="titulo-banner">Kimetsu no Yaiba</h3>
-						<div class="contenedor__estado">
-							<a href="#" class="estado">Finalizado</a>
-						</div>
-						<ocultar>
-						<p class="descripcion-banner">Desde la antigüedad, abundaban los rumores sobre demonios devoradores de hombres que acechaban 
-							en el bosque.Debido a esto, los pobladores locales nunca se aventuran afuera por la noche. La leyenda dice que un asesino 
-							de demonios también vaga por la noche, persiguiendo a estos demonios sedientos de sangre. Para el joven Tanjirou, estos rumores 
-							pronto se convertirán en su dura realidad ... Desde la muerte de su padre, Tanjirou se ha comprometido a mantener a su familia. 
-							Aunque sus vidas pueden ser endurecidas por la tragedia, han encontrado la felicidad.</p>
-						</ocultar>
-						<div class="contenedor__genero">
-							<a href="../pages/categorias/demonios.html" class="genero">Demonios</a>
-							<a href="../pages/categorias/shonen.html" class="genero">Shonen</a>
-							<a href="../pages/categorias/accion.html" class="genero">Accion</a>
-							<a href="../pages/categorias/sobrenatural.html" class="genero">Sobrenatural</a>
-						</div>
+					<div class="calificacion">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
 					</div>
+					<div class="descripcion__anime">
+						<p class="descripcion__anime__banner">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam numquam recusandae ex ipsa autem, 
+							totam doloribus quaerat a vel architecto tempora, aperiam consectetur aliquam et, consequuntur praesentium 
+							atque adipisci animi. <ocultar>Quo excepturi ipsum, ea facilis necessitatibus optio dolores ab suscipit, quisquam cupiditate 
+							illum voluptas? Quae eum aliquid iste. Cupiditate, unde.</ocultar>
+						</p>
+					</div>
+					<div class="contenedor__generos">
+						<a class="genero" href="#">Accion</a>
+						<a class="genero" href="#">Demonios</a>
+						<a class="genero" href="#">Suspenso</a>
+						<a class="genero" href="#">Shonen</a>
+					</div>
+					<div class="botonera">
+						<button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+              			<button role="button" class="boton"><i class="fas fa-plus"></i>Agregar</button>
+					</div>
+
 				</div>
-				<mostrar>
-					<p class="descripcion-banner">Desde la antigüedad, abundaban los rumores sobre demonios devoradores de hombres que acechaban 
-					en el bosque.Debido a esto, los pobladores locales nunca se aventuran afuera por la noche. La leyenda dice que un asesino 
-					de demonios también vaga por la noche, persiguiendo a estos demonios sedientos de sangre.
-				</p>
-				</mostrar>
+
+
+				<style>.background__img{background: linear-gradient(90deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0.7231267507002801) 68%, rgba(0,0,0,0.23573179271708689) 100%), url(../../assets/img/banners/kimetsu_no_yaiba_banner.webp);background-position: center center;background-size: cover;}</style>
 			</div>
 		</div>
-		<div class="contenedor">
-			<div class="navegacion">
-				<a class="navegacion" href="../../../buscar.html">Anime</a><i class="fas fa-angle-right"></i>
-				<a class="navegacion" href="main.html">Kimetsu no yaiba</a>
-			</div>
-		</div>
-		<div class="contenedor">
+	</div>
+		<!-- <div class="contenedor">
 			<h4 class="lista__capitulos">Lista de capitulos</h4>
 			<div class="contenedor__scrollbar">
 				<div class="contenedor__capitulos">
@@ -128,7 +123,7 @@
 					<a class="capitulo" href="01.html"><li>Kimetsu no yaiba capitulo 01</li></a>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 	<footer>
 		<div class="footer">
@@ -149,16 +144,6 @@
 			</div>
 		</div>
 	</footer>
+	<script src="../../js/main.js"></script>
 </body>
 </html>
-	<!-- <div class="popup" id="capitulo01">
-		<div class="popup-contenido">
-			<a href="kimetsu_no_yaiba.html"><i class="fas fa-times"></i></a> <video class="video" controls=""><source src="#01.mp4" type="video/mp4"></video>
-			<style>
-			                 #capitulo01:target{
-			                     opacity:1;
-			                     z-index: 200;
-			                     pointer-events:auto;
-			                 }
-			</style>
-		</div> -->
