@@ -1,37 +1,55 @@
-var urlActual = window.location.hash;
-// Buscando la procedencia de la cuenta
-if(urlActual === '#Carlos'){
+
+// sidebar toggle
+const btnToggle = document.querySelector('.toggle-btn');
+btnToggle.addEventListener('click', function () {
+  document.getElementById('sidebar').classList.toggle('active');
+});
+// INgresando a ala cuenta y guardando datos en 
+function ingresarCarlos(){
+    localStorage.setItem('cuenta','carlos');
+    window.location=("ingresar.html");   
+}
+function ingresarEliud(){
+    window.location=("ingresar.html");
+    localStorage.setItem('cuenta','eliud');
+}
+function ingresarFernando(){
+    window.location=("ingresar.html");
+    localStorage.setItem('cuenta','fernando');
+}
+function ingresarManrique(){
+    window.location=("ingresar.html");
+    localStorage.setItem('cuenta','manrique');
+}
+
+// Buscando la cuenta activa
+
+if (localStorage.getItem('cuenta') === 'carlos'){
     document.getElementById("avatar").src="assets/img/usuarios/carlos.webp";
     var nombre = document.getElementById("username");
     nombre.className = "carlos";
 }
-if(urlActual === '#Eliud'){
+if (localStorage.getItem('cuenta') === 'eliud'){
     document.getElementById("avatar").src="assets/img/usuarios/eliud.webp";
     var nombre = document.getElementById("username");
     nombre.className = "eliud";
 }
-if(urlActual === '#Fernando'){
+if (localStorage.getItem('cuenta') === 'fernando'){
     document.getElementById("avatar").src="assets/img/usuarios/fernando.webp";
     var nombre = document.getElementById("username");
     nombre.className = "fernando";
 }
-if(urlActual === '#Manrique'){
+if (localStorage.getItem('cuenta') === 'manrique'){
     document.getElementById("avatar").src="assets/img/usuarios/manrique.webp";
     var nombre = document.getElementById("username");
     nombre.className = "manrique";
 }
 
-
-//Validacion de usuarios
 var user = document.getElementById('user');
 var pass = document.getElementById('pass');
-var error = document.getElementById('error');
-error.style.color = 'red';
 
 function validarCuenta(){
     console.log('Enviando Formulario...');
-
-    var mensajesError =[];
     if(user.value === 'CarlosBurelo' && pass.value === 'carlos31' ){
         console.log('Ingresando como Carlos...');
         window.location=("home.html");
@@ -47,11 +65,6 @@ function validarCuenta(){
     if(user.value === 'Manrique' && pass.value === 'manriquejanro' ){
         console.log('Ingresando como Manrique...');
         window.location=("home.html");
-    }
-    else{
-        mensajesError.push('Datos inconrrectos');
-        error.innerHTML = mensajesError.join(', ');
-        // window.location = ("https://i.pinimg.com/736x/0c/59/44/0c594470f950c6c4f703cbec2c9b485b.jpg");
     }
     return false;
 }

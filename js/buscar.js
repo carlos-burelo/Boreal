@@ -1,3 +1,4 @@
+
 const grid = new Muuri('.grid', {
 	layout: {
 		rounding: false
@@ -7,17 +8,6 @@ const grid = new Muuri('.grid', {
 window.addEventListener('load', () => {
 	grid.refreshItems().layout();
 // 	document.getElementById('grid').classList.add('imagenes-cargadas');
-
-
-// sidebar toggle
-const btnToggle = document.querySelector('.toggle-btn');
-
-btnToggle.addEventListener('click', function () {
-  console.log('clik')
-  document.getElementById('sidebar').classList.toggle('active');
-  console.log(document.getElementById('sidebar'))
-});
-
 	// los listener de los enlaces para filtrar por categoria.
 	const enlaces = document.querySelectorAll('#categorias a');
 	enlaces.forEach((elemento) => {

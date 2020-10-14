@@ -106,6 +106,18 @@ header .contenedor {
 	align-items: center;
 }
 /*---- ---- ---- ---- Navbar para dispositivos moviles ---- ---- ---- ----*/
+#avatar{
+	border-radius: 50%;
+}
+.cuenta__actual{
+	display: flex;
+	justify-content: normal;
+	align-items: center;
+}
+.cuenta__actual #username{
+	font-size: 20px;
+	color: var(--blanco);
+}
 #sidebar {
 	position: fixed;
 	width: 200px;
@@ -116,23 +128,22 @@ header .contenedor {
 	z-index: 200;
 	padding: 0px 5px;
 }
-.logo__img{
-	width: 50px;
-	height: 50px;
-	margin: 5px;
+.logo__img {
+    width: 40px;
+    height: 40px;
+    margin: 6px;
 }
 #sidebar.active {
 	right: 0px;
 }
 #sidebar ul li {
-	color: var(--azul);
-	list-style: none;
-	padding: 15px 10px;
-	margin: 10px 0px;
-	border-radius: 5px;
-	text-align: center;
-	text-decoration: none;
-	background-color: var(--gris-medio);
+    color: var(--azul);
+    list-style: none;
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: var(--gris-medio);
 }
 #sidebar ul li:hover {
 	transition: linear .3s;
