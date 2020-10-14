@@ -657,11 +657,6 @@ header .contenedor {
 .grid {
 	position: relative;
 	width: 100%;
-	opacity: 0;
-}
-.mostrar__grid{
-	transition: linear .4s;
-	opacity: 1;
 }
 .grid .item {
 	position: absolute;
