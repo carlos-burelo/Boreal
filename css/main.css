@@ -319,16 +319,16 @@ header .contenedor {
 }
 /*---- ---- ---- Backgrounds de el slider principal ---- ---- ----*/
 .slider-content1 { /*fire force */
-  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../assets/img/banners/fire_force_banner.webp);
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://carlos-burelo.github.io/Boreal/assets/img/banners/fire_force_banner.webp);
 }
 .slider-content2 { /*kimetsu */
-  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../assets/img/banners/kimetsu_no_yaiba_banner.webp);
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://carlos-burelo.github.io/Boreal/assets/img/banners/kimetsu_no_yaiba_banner.webp);
 }
 .slider-content3 { /*konosuba */
-  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../assets/img/banners/konosuba_banner.webp);
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://carlos-burelo.github.io/Boreal/assets/img/banners/konosuba_banner.webp);
 }
 .slider-content4 { /*boku no hero */
-  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../assets/img/banners/boku_no_hero_banner.webp);
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://carlos-burelo.github.io/Boreal/assets/img/banners/boku_no_hero_banner.webp);
 }
 .banner-principal {
 	font-size: 16px;
@@ -419,7 +419,7 @@ header .contenedor {
 	width: 200px;
 	height: 250px;
 	border-radius: var(--radio);
-	overflow: hidden;
+	/* overflow: hidden; */
 	margin-right: 10px;
 	display: inline-block;
 	cursor: pointer;
@@ -432,17 +432,19 @@ header .contenedor {
 }
 .carrusel__container:hover .carrusel__item:hover {
 	transform: scale(1.1);
-	opacity: 1;
+	opacity: .5;
 }
 .carrusel__item__img {
 	width: 150px;
 	height: 230px;
 	object-fit: cover;
+	border-radius: var(--radio);
 }
 .carrusel__item:hover {
 	transition: all .4s;
 	transform: scale(1.1);
 	border-radius: var(--radio);
+	overflow: initial;
 }
 .carrusel__item__details {
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
