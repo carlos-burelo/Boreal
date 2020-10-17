@@ -86,7 +86,7 @@ src: local('Product Sans Bold'), url('../assets/fonts/ProductSans-Bold.woff') fo
 	height: 8px; 
 }
 ::-webkit-scrollbar-thumb {
-	background: var(--gris);
+	background: var(--gris-oscuro);
 	border-radius: 10px;
 }
 /*---- ---- ---- Body ---- ---- ----*/
@@ -100,30 +100,61 @@ body{
 	width: 95%;
 	margin: auto;
 }
-header .contenedor {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+/*---- ---- ---- ---- Botones ---- ---- ---- ----*/
+@-webkit-keyframes push {
+	50% {
+		/* -webkit-transform: scale(0.8); */
+		transform: scale(0.8)
+	}
+	100% {
+		/* -webkit-transform: scale(1); */
+		transform: scale(1)
+	}
+}
+@keyframes push {
+	50% {
+		/* -webkit-transform: scale(0.8); */
+		transform: scale(0.8)
+	}
+	100% {
+		/* -webkit-transform: scale(1); */
+		transform: scale(1)
+	}
+}
+.push {
+	/* display: inline-block; */
+	/* vertical-align: middle; */
+	/* -webkit-transform: perspective(1px) translateZ(0); */
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+}
+.push:active, .push:focus, .push:hover {
+	/* -webkit-animation-name: push; */
+	animation-name: push;
+	/* -webkit-animation-duration: .3s; */
+	animation-duration: .3s;
+	/* -webkit-animation-timing-function: linear; */
+	animation-timing-function: linear;
+	/* -webkit-animation-iteration-count: 1; */
+	animation-iteration-count: 1
 }
 /*---- ---- ---- ---- Navbar para dispositivos moviles ---- ---- ---- ----*/
+.barra {
+	width: 100%;
+    background: var(--negro);
+    display: flex;
+	justify-content: flex-end;
+	z-index: 100;
+}
 #avatar{
 	border-radius: 50%;
-}
-.cuenta__actual{
-	display: flex;
-	justify-content: normal;
-	align-items: center;
-}
-.cuenta__actual #username{
-	font-size: 20px;
-	color: var(--blanco);
 }
 #sidebar {
 	position: fixed;
 	width: 200px;
 	height: 100%;
 	background: var(--negro);
-	right: -200px;
+	left: -200px;
 	transition: all .4s linear;
 	z-index: 200;
 	padding: 0px 5px;
@@ -131,10 +162,10 @@ header .contenedor {
 .logo__img {
     width: 40px;
     height: 40px;
-    margin: 6px;
+	margin: 6px;
 }
 #sidebar.active {
-	right: 0px;
+	left: 0px;
 }
 #sidebar ul li {
     color: var(--azul);
@@ -160,8 +191,8 @@ header .contenedor {
 }
 #sidebar .toggle-btn {
 	position: absolute;
-	right: 230px;
-	top: 15px;
+	left: 230px;
+	top: 8px;
 	cursor: pointer;
 } 
 #sidebar .toggle-btn span {
@@ -552,8 +583,7 @@ header .contenedor {
 	background: #070707;
 	padding: 20px 0px;
 }
-.docs-list,
-.social-list{
+.docs-list,.social-list{
 	text-decoration: none;
 	list-style: none;
 }
@@ -643,7 +673,6 @@ header .contenedor {
 		display: none;
 	}
 }
-
 /*---- ---- ---- ---- Buscar.html ---- ---- ---- ----*/
 .contenedor__busqueda{
 	width: 100%;
@@ -891,4 +920,92 @@ header .contenedor {
 		margin: 0;
 		padding: 10px 20px;
 	}
+}
+/*---- ---- ---- ---- Conetendor panel.html ---- ---- ---- ----*/
+/*Valores por defecto*/
+#subir__anime,#editar__anime,#borrar__anime,#configuracion{
+	display: none;
+}
+#bienvenida__panel {
+    height: 100%;
+    margin: 18% 0;
+}
+.contenedor__bienvenida{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+#bienvenida__panel i{
+	font-size: 80px;
+	color: var(--azul);
+}
+.cuenta__actual__contenedor{
+	display: flex;
+	align-items: center;
+	margin: 18px 0px;
+}
+.panel__navegacion{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	background-color: var(--gris-oscuro-2);
+	border-radius: var(--radio);
+	vertical-align: middle;
+}
+.panel__navegacion i,
+.panel__navegacion a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+	color: var(--blanco);
+	margin: 0px 4px;
+}
+
+.activo{
+	background: #0084ff;
+}
+.cuenta__actual .admin__img{
+	width: 65px;
+	height: 65px;
+	border-radius: 40px;
+	margin-left: 10px;
+}
+.cuenta_actual_descripcion{
+	margin: 25px 10px;
+}
+.admin__name{
+	font-size: 25px;
+	color: var(--blanco);
+}
+.admin__rango{
+	color: var(--amarillo);
+}
+.contenedor__panel__principal{
+	display: flex;
+	/* height: 92.4vh; */
+}
+.contenedor__panel__dasboard{
+	width: 18%;
+	background: var(--gris-oscuro-2);
+}
+.dashboard__elementos{
+	text-decoration: none;
+	color: var(--blanco);
+}
+.dasboard__item{
+	padding: 30px 20px;
+	font-weight: bold;
+}
+.dasboard__item i{
+	margin-right: 10px;
+	font-size: 18px;
+}
+.dasboard__item li a:hover .dasboard__item i:hover{
+	background: var(--azul);
+
+}
+.contenedor__panel__contenido{
+	background: var(--gris);
+	width: 100%;
+	padding: 15px;
 }

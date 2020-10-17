@@ -1,19 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
-    <link rel="shortcut icon" href="../assets/img/Boreal_logo.webp" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/panel.css">
-    <title>Panel de control</title>
-</head>
-<body>
+<html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
+      <link rel="shortcut icon" href="https://carlos-burelo.github.io/Boreal/assets/img/Boreal_logo.webp" type="image/x-icon">
+      <link rel="stylesheet" href="../css/main.css">
+      <title>Panel de control</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div id="sidebar">
+        <div class="toggle-btn">
+        <span><i class="hvr-push fas fa-stream"></i></span>
+        </div>
+        <ul>
+          <li class="cuenta__actual">
+            <img src="" alt="Logo" id="avatar" class="logo__img">
+            <h4 id="username" class="username"></h4>
+          </li>
+          <a href="home"><li>Home</li></a>
+          <a href="directorio"><li>Directorio</li></a>
+          <a href="#"><li>Popular</li></a>
+          <a href="#"><li>Movies</li></a>
+          <a href="#"><li>Ovas</li></a>
+          <a href="#"><li>Recientes</li></a>
+          <a href="#"><li>Mi Lista</li></a>
+          </ul>
+        </div>
+    </nav>
+    <div class="barra">
+      <img src="https://carlos-burelo.github.io/Boreal/assets/img/Boreal_logo.webp" alt="Logo" class="logo__img">
+    </div>
 
-    <header> <!-- -- ---- ---- (titulo / menus) ---- ---- -- -->
-    <div class="contenedor">
-      <div class="header_main">
+      <div class="contenedor__panel__principal">
+        
+        <div class="contenedor__panel__dasboard" id="contenedor__panel__dasboard">
+          <ul>
+            <div class="cuenta__actual__contenedor">
+              <div class="cuenta__actual">
+                <img src="" id="admin__img" class="admin__img" alt="admin">
+              </div>
+              <div class="cuenta_actual_descripcion">
+                <h4 id="admin__name" class="admin__name"></h4>
+                <h4 class="admin__rango">Administrador</h4>
+              </div>
+            </div>
+            <a href="#" class="dashboard__elementos" onclick="subir_anime()"><li class="dasboard__item"><i class="push fas fa-upload"></i>Subir anime</li></a>
+            <a href="#" class="dashboard__elementos" onclick="editar_anime()"><li class="dasboard__item"><i class="push fas fa-trash"></i>Editar anime</li></a>
+            <a href="#" class="dashboard__elementos" onclick="borrar_anime()"><li class="dasboard__item"><i class="push fas fa-trash"></i>Borrar anime</li></a>
+            <a href="#" class="dashboard__elementos" onclick="configuracion()"><li class="dasboard__item"><i class="push fas fa-cog"></i> Configuraciones</li></a>
+            <a href="#" class="dashboard__elementos" onclick="cerrar_sesion()"><li class="dasboard__item"><i class="push fas fa-sign-out-alt"></i>Cerrar session</li></a>
+          </ul>
+        </div>
+
+        <div class="contenedor__panel__contenido">
+
+
+          <div class="panel__navegacion">
+            <a href="" class="panel_navegaccion">Panel</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="" id="id__navegaccion"></a>
+          </div>
+          
+          <div id="contenido" class="contenido__del__panel">
+
+            <div id="bienvenida__panel">
+              <div class="contenedor__bienvenida">
+                <i class="fas fa-user-shield"></i>
+              <h1 class="bienvenida">Bienvenido al panel de control</h1>
+              </div>
+            </div>
+
+            <div id="subir__anime">
+              SUBIR ANIME
+            </div>
+
+            <div id="editar__anime">
+              EDITAR ANIME
+            </div>
+
+            <div id="borrar__anime">
+              BORRAR ANIME
+            </div>
+
+            <div id="configuracion">
+              CONFIGURACIONES
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+
+
+      </div>
+      <footer>
+        <div class="footer">
+          <div class="contenedor">
+            <h2 class="logotipo">BOREAL</h2>
+            <ul class="social-list">
+              <li class="social facebook"><i class="fab fa-facebook-square"></i></li>
+              <li class="social twitter"><i class="fab fa-twitter"></i></li>
+              <li class="social github"><i class="fab fa-github"></i></li>
+              <li class="social telegram"><i class="fab fa-telegram-plane"></i></li>
+            </ul>
+            <ul class="docs-list">
+              <li class="docs">Documentacion</li>
+              <li class="docs">Repositorio</li>
+              <li class="docs">Acerca de:</li>
+            </ul>
+            <h3 class="copy">&copy; Carlos Burelo 2020</h3>
+          </div>
+        </div>
+      </footer>
+  </body>
+  <script src="../js/panel.js"></script>
+  <!-- <script src="../js/account.js"></script> -->
+</html>
+<!-- <div class="header_main">
       <img class="logo__img" src="../assets/img/Boreal_logo.webp" alt="Boreal">
     </div>
         <nav>
@@ -99,8 +206,8 @@
                                       <h4 class="label">Genero</h4>
                                       <input type="text" class="inputs " id="genero" placeholder="Ejem: Demon Shonen Etc">
 
-                                      <!-- <h4 class="label">Descripcion</h4>
-                                      <textarea class="inputs descripcion" name="" id="" cols="30" rows="3"></textarea> -->
+                                      <h4 class="label">Descripcion</h4>
+                                      <textarea class="inputs descripcion" name="" id="" cols="30" rows="3"></textarea>
                                       <button class="enviar__datos" type="submit" onclick='return enviarFormulario()' value='enviar'>Guardar</button>
                                     </form>
                                   </div>
@@ -156,6 +263,4 @@
 		</div>
     </footer>
 
-    <script src="../js/panel.js"></script>
-</body>
-</html>
+    <script src="../js/panel.js"></script> -->

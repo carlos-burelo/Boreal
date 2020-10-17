@@ -189,7 +189,6 @@ header nav a.activo {
 h3 .activo {
 	color: var(--verde);
 }
-
 /*---- ---- ---- Footer ---- ---- ----*/
 .footer{
 	margin-top: 20px;
@@ -198,8 +197,7 @@ h3 .activo {
 	background: #070707;
 	padding: 20px 0px;
 }
-.docs-list,
-.social-list{
+.docs-list,.social-list{
 	text-decoration: none;
 	list-style: none;
 }
@@ -217,14 +215,10 @@ h3 .activo {
 .social-list li{
 	margin: 0px 10px;
 }
-.fa-facebook-square,
-.fa-github,
-.fa-twitter,
-.fa-telegram-plane{
+.fa-facebook-square,.fa-github,.fa-twitter,.fa-telegram-plane{
 	margin-right: 5px;
 	font-size: 30px;
 }
-
 /*---- ---- ---- Contendor del dashboard ---- ---- ----*/
 #anime,#capitulo,#directorio,#ajustes{
 	display: none;
@@ -309,7 +303,6 @@ span{
 	border-radius: 5px;
 	position: relative;
 }
-
 .anime__img{
 	width: 100%;
 	height: auto;
@@ -383,18 +376,11 @@ span{
 	background-color: var(--verde);
 	color: var(--negro);
 }
-
 /*---- ---- ---- Contenedor de footer ---- ---- ----*/
-.fa-facebook-square,
-.fa-github,
-.fa-twitter,
-.fa-telegram-plane{
+.fa-facebook-square,.fa-github,.fa-twitter,.fa-telegram-plane{
 	color: #fff;
 }
-.fa-facebook-square:hover,
-.fa-github:hover,
-.fa-twitter:hover,
-.fa-telegram-plane:hover{
+.fa-facebook-square:hover,.fa-github:hover,.fa-twitter:hover,.fa-telegram-plane:hover{
 	color: var(--azul);
 	transition: all .4s;
 	transform: scale(1.3);

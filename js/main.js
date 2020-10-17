@@ -4,6 +4,7 @@ btnToggle.addEventListener('click', function () {
   document.getElementById('sidebar').classList.toggle('active');
 });
 
+
 // Permanecer la cuenta activa
 if (localStorage.getItem('cuenta') === 'carlos'){
 	document.getElementById("avatar").src="https://carlos-burelo.github.io/Boreal/assets/img/usuarios/carlos.webp";
@@ -27,7 +28,7 @@ if (localStorage.getItem('cuenta') === 'manrique'){
 }
 
 // Funciones para el Carrusel
-new Glider(document.querySelector('.carrusel__container1'), {
+new Glider(document.querySelector('.contenedor__carrusel__1'), {
 	slidesToShow: 8,
 	slidesToScroll: 8,
 	draggable: true,
@@ -36,7 +37,7 @@ new Glider(document.querySelector('.carrusel__container1'), {
 		next: '.siguiente1'
 	}
 });
-new Glider(document.querySelector('.carrusel__container2'), {
+new Glider(document.querySelector('.contenedor__carrusel__2'), {
 	slidesToShow: 8,
 	slidesToScroll: 8,
 	draggable: true,
@@ -45,7 +46,7 @@ new Glider(document.querySelector('.carrusel__container2'), {
 		next: '.siguiente2'
 	}
 });
-new Glider(document.querySelector('.carrusel__container3'), {
+new Glider(document.querySelector('.contenedor__carrusel__3'), {
 	slidesToShow: 8,
 	slidesToScroll: 8,
 	draggable: true,
@@ -54,7 +55,7 @@ new Glider(document.querySelector('.carrusel__container3'), {
 		next: '.siguiente3'
 	}
 });
-new Glider(document.querySelector('.carrusel__container4'), {
+new Glider(document.querySelector('.contenedor__carrusel__4'), {
 	slidesToShow: 8,
 	slidesToScroll: 8,
 	draggable: true,
