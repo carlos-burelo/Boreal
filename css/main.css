@@ -31,42 +31,6 @@ a{
 i{
 	font-display: fallback;
 }
-/*---- ---- ---- ---- Fonts ---- ---- ---- ----*/
-@font-face {
-font-family: 'Product Sans Regular';
-font-style: normal;
-font-weight: normal;
-font-display: fallback;
-src: local('Product Sans Regular'), url('../fonts/ProductSans-Regular.woff') format('woff');
-}
-@font-face {
-font-family: 'Product Sans Light Regular';
-font-style: normal;
-font-weight: normal;
-font-display: fallback;
-src: local('Product Sans Light Regular'), url('../fonts/ProductSans-Light.woff') format('woff');
-}
-@font-face {
-font-family: 'Product Sans Medium Regular';
-font-style: normal;
-font-weight: normal;
-font-display: fallback;
-src: local('Product Sans Medium Regular'), url('../fonts/ProductSans-Medium.woff') format('woff');
-}
-@font-face {
-font-family: 'Product Sans Black Regular';
-font-style: normal;
-font-weight: normal;
-font-display: fallback;
-src: local('Product Sans Black Regular'), url('../fonts/ProductSans-Black.woff') format('woff');
-}
-@font-face {
-font-family: 'Product Sans Bold';
-font-style: normal;
-font-weight: normal;
-font-display: fallback;
-src: local('Product Sans Bold'), url('../fonts/ProductSans-Bold.woff') format('woff');
-}
 /*---- ---- ---- ---- Scrollbar para escritorio (*.html) ---- ---- ---- ----*/
 ::-webkit-scrollbar {
 	background: var(--negro);
@@ -91,14 +55,16 @@ src: local('Product Sans Bold'), url('../fonts/ProductSans-Bold.woff') format('w
 }
 /*---- ---- ---- Body ---- ---- ----*/
 body{
-	font-family: 'Product Sans Regular';
 	background: var(--negro);
 	color: var(--blanco);
+	font-family: 'Cabin', sans-serif;
 }
 /*---- ---- ---- ---- Contenedores (*.html) ---- ---- ---- ----*/
 .contenedor {
 	width: 95%;
 	margin: auto;
+	font-family: 'Cabin', sans-serif;
+	font-weight: 500;
 }
 /*---- ---- ---- ---- Botones ---- ---- ---- ----*/
 @-webkit-keyframes push {
@@ -369,16 +335,16 @@ body{
 }
 /*---- ---- ---- Backgrounds de el slider principal ---- ---- ----*/
 .slider-content1 { /*fire force */
-  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://carlos-burelo.github.io/Boreal/img/banners/fire_force_banner.webp);
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://raw.githubusercontent.com/carlos-burelo/Boreal/main/img/banners/fire_force_banner.webp);
 }
 .slider-content2 { /*kimetsu */
-  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://carlos-burelo.github.io/Boreal/img/banners/kimetsu_no_yaiba_banner.webp);
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://raw.githubusercontent.com/carlos-burelo/Boreal/main/img/banners/kimetsu_no_yaiba_banner.webp);
 }
 .slider-content3 { /*konosuba */
-  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://carlos-burelo.github.io/Boreal/img/banners/konosuba_banner.webp);
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://raw.githubusercontent.com/carlos-burelo/Boreal/main/img/banners/konosuba_banner.webp);
 }
 .slider-content4 { /*boku no hero */
-  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://carlos-burelo.github.io/Boreal/img/banners/boku_no_hero_banner.webp);
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://raw.githubusercontent.com/carlos-burelo/Boreal/main/img/banners/boku_no_hero_banner.webp);
 }
 .banner-principal {
 	font-size: 16px;
