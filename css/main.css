@@ -99,6 +99,7 @@ body{
 .contenedor {
 	width: 95%;
 	margin: auto;
+	margin-top: 47px;
 }
 /*---- ---- ---- ---- Botones ---- ---- ---- ----*/
 @-webkit-keyframes push {
@@ -122,33 +123,60 @@ body{
 	}
 }
 .push {
-	/* display: inline-block; */
-	/* vertical-align: middle; */
-	/* -webkit-transform: perspective(1px) translateZ(0); */
 	transform: perspective(1px) translateZ(0);
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0)
 }
 .push:active, .push:focus, .push:hover {
-	/* -webkit-animation-name: push; */
 	animation-name: push;
-	/* -webkit-animation-duration: .3s; */
 	animation-duration: .3s;
-	/* -webkit-animation-timing-function: linear; */
 	animation-timing-function: linear;
-	/* -webkit-animation-iteration-count: 1; */
 	animation-iteration-count: 1
 }
-/*---- ---- ---- ---- Navbar para dispositivos moviles ---- ---- ---- ----*/
-.barra {
+/*---- ---- ---- ---- Nabvar para escritorio ---- ---- ---- ----*/
+.separador{
+	height: 50px;
+}
+.navbar{
 	width: 100%;
-    background: var(--negro);
-    display: flex;
-	justify-content: flex-end;
-	z-index: 100;
+	height: 50px;
+	background-color: var(--negro);
+	z-index: 200;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
 }
-#avatar{
-	border-radius: 50%;
+.contenedor__barra{
+	display: flex;
+	justify-content: space-between;
+	width: 95%;
+	margin: auto;
 }
+.contenedor__barra a{
+	text-decoration: none;
+}
+.contenedor__barra li {
+	list-style: none;
+}
+.fa-stream{
+	font-size: 30px;
+}
+.logo__cuenta{
+	width: 40px;
+	height: 40px;
+	margin-top: 5px;
+	border-radius: 20px;
+}
+.cuenta__usuario{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.username{
+	margin-right: 10px;
+	font-size: 18px;
+}
+/*---- ---- ---- ---- Navbar para dispositivos moviles ---- ---- ---- ----*/
+
 #sidebar {
 	position: fixed;
 	width: 200px;
@@ -158,7 +186,7 @@ body{
 	transition: all .4s linear;
 	z-index: 200;
 	padding: 0px 5px;
-}
+} 
 .logo__img {
     width: 40px;
     height: 40px;

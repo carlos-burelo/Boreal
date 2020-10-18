@@ -1,15 +1,15 @@
-// sidebar toggle
 const btnToggle = document.querySelector('.toggle-btn');
 btnToggle.addEventListener('click', function () {
   document.getElementById('sidebar').classList.toggle('active');
 });
 
 
+
 // Permanecer la cuenta activa
-if (localStorage.getItem('cuenta') === 'carlos'){
+if (localStorage.getItem('cuenta') === 'Carlos'){
 	document.getElementById("avatar").src="https://carlos-burelo.github.io/Boreal/assets/img/usuarios/carlos.webp";
-    var nombre = document.getElementById("username");
-	nombre.className = "carlos";
+    var adminName = localStorage.getItem('cuenta');
+	document.getElementById('admin__name').innerHTML=adminName;
 }
 if (localStorage.getItem('cuenta') === 'eliud'){
 	document.getElementById("avatar").src="https://carlos-burelo.github.io/Boreal/assets/img/usuarios/eliud.webp";
@@ -64,38 +64,3 @@ new Glider(document.querySelector('.contenedor__carrusel__4'), {
 		next: '.siguiente4'
 	}
 });
-
-// Funciones para el panel
-function subirAnime(){
-    document.getElementById("anime").style.display="block";
-    var menuAnime = document.getElementById("boton_anime");
-    menuAnime.className = "menu_activo";
-    document.getElementById("capitulo").style.display="none";
-    document.getElementById("directorio").style.display="none";
-    document.getElementById("ajustes").style.display="none";
-    document.getElementById("ajustes").style.display="none";
-}
-function subirCapitulo(){
-    document.getElementById("anime").style.display="none";
-    document.getElementById("capitulo").style.display="block";
-    var menuCapitulo = document.getElementById("boton_capitulo");
-    menuCapitulo.className = "menu_activo";
-    document.getElementById("directorio").style.display="none";
-    document.getElementById("ajustes").style.display="none";
-}
-function editarDirectorios(){
-    document.getElementById("anime").style.display="none";
-    document.getElementById("capitulo").style.display="none";
-    document.getElementById("directorio").style.display="block";
-    var menuDirectorio = document.getElementById("boton_directorio");
-    menuDirectorio.className = "menu_activo";
-    document.getElementById("ajustes").style.display="none";
-}
-function ajustes(){
-    document.getElementById("anime").style.display="none";
-    document.getElementById("capitulo").style.display="none";
-    document.getElementById("directorio").style.display="none";
-    document.getElementById("ajustes").style.display="block";
-    var menuAjustes = document.getElementById("boton_ajustes");
-    menuAjustes.className = "menu_activo";
-}

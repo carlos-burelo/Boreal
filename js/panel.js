@@ -7,7 +7,7 @@ document.getElementById("admin__img").src="https://carlos-burelo.github.io/Borea
 document.getElementById("avatar").src="https://carlos-burelo.github.io/Boreal/assets/img/usuarios/carlos.webp";
 var adminName = localStorage.getItem('cuenta');
 document.getElementById('admin__name').innerHTML=adminName;
-document.getElementById('username').innerHTML=adminName;
+// document.getElementById('username').innerHTML=adminName;
 
 const enlaces = document.querySelectorAll('#contenedor__panel__dasboard a li');
 
