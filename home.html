@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/img/Boreal_logo.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="img/Boreal_logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@5.0.2/keen-slider.min.css"/>
     <link rel="stylesheet" href="css/main.css">
     <!-- <link rel="stylesheet" href="css/hover-min.css"> -->
     <title>BOREAL</title>
@@ -41,70 +42,64 @@
           <a href="#"><li>Recientes</li></a>
           <a href="#"><li>Mi Lista</li></a>
         </ul>
-    </div>
-    <div class="separador"></div>
+  </div>
+  <div class="separador"></div>
   
-  <div class="slider"> <!-- Slider principal -->
-    <ul>
-      <li> <!-- contenido-1 -->
-        <main>
-          <div class="banner-principal slider-content1">
-            <div class="contenedor">
-              <h3 class="titulo-banner">Enen no Shouboutai</h3>
-              <p class="descripcion-banner">Tokio se encuentra bajo un extraño fenómeno: ¡la gente entra,
-              sin remedio, en combustión espontánea! Aunque, afortunadamente, hay un equipo a cargo de 
-              mantener a raya este particular infierno…</p>
-              <button role="button" class="push boton"><i class="fas fa-play"></i>Reproducir</button>
-              <button role="button" class="push boton"><i class="fas fa-info-circle"></i>Más información</button>
-            </div>
+    <div class="navigation-wrapper">
+      <div id="my-keen-slider" class="keen-slider">
+
+        <div class="keen-slider__slide slider-content1 banner-principal">
+          <div class="contenedor">
+            <h3 class="titulo-banner">Enen no Shouboutai</h3>
+            <p class="descripcion-banner">Tokio se encuentra bajo un extraño fenómeno: ¡la gente entra,
+            sin remedio, en combustión espontánea! Aunque, afortunadamente, hay un equipo a cargo de 
+            mantener a raya este particular infierno…</p>
+            <button role="button" class="push boton"><i class="fas fa-play"></i>Reproducir</button>
+            <button role="button" class="push boton"><i class="fas fa-info-circle"></i>Más información</button>
           </div>
-        </main>
-      </li>
-      <li> <!-- contenido-2 -->
-        <main>
-          <div class="banner-principal slider-content2">
-            <div class="contenedor">
-              <h3 class="titulo-banner">Kimetsu no Yaiba</h3>
-              <p class="descripcion-banner">Estamos en la era Taisho de Japón. Tanjiro, un joven que se gana 
-              la vida vendiendo carbón, descubre un día que su familia ha sido asesinada por un demonio. Para 
-              empeorar las cosas, su hermana menor Nezuko, la única superviviente de la masacre.</p>
-              <a href="animes/kimetsu_no_yaiba"><button role="button" class="push boton"><i class="fas fa-play"></i>Reproducir</button></a>
-              <button role="button" class="push boton"><i class="fas fa-info-circle"></i>Más información</button>
-            </div>
+        </div>
+
+        <div class="keen-slider__slide slider-content2 banner-principal">
+          <div class="contenedor">
+            <h3 class="titulo-banner">Kimetsu no Yaiba</h3>
+            <p class="descripcion-banner">Estamos en la era Taisho de Japón. Tanjiro, un joven que se gana 
+            la vida vendiendo carbón, descubre un día que su familia ha sido asesinada por un demonio. Para 
+            empeorar las cosas, su hermana menor Nezuko, la única superviviente de la masacre.</p>
+            <a href="animes/kimetsu_no_yaiba"><button role="button" class="push boton"><i class="fas fa-play"></i>Reproducir</button></a>
+            <button role="button" class="push boton"><i class="fas fa-info-circle"></i>Más información</button>
           </div>
-        </main>
-      </li>
-      <li> <!-- contenido-3 -->
-        <main>
-          <div class="banner-principal slider-content3">
-            <div class="contenedor">
-              <h3 class="titulo-banner">Kono Subarashii Sekai ni Shukufuku wo!</h3>
+        </div>
+
+        <div class="keen-slider__slide slider-content3 banner-principal">
+          <div class="contenedor">
+            <h3 class="titulo-banner">Kono Subarashii Sekai ni Shukufuku wo!</h3>
               <p class="descripcion-banner">
               Esta popular comedia de mundos alternativos gira en torno a Kazuma Satou, un hikkikomori fan a muerte 
               de los videojuegos, el anime y el manga. Un accidente de tráfico pone fin a su vida…</p>
               <button role="button" class="push boton"><i class="fas fa-play"></i>Reproducir</button>
               <button role="button" class="push boton"><i class="fas fa-info-circle"></i>Más información</button>
-            </div>
           </div>
-        </main>
-      </li>
-      <li> <!-- contenedor-4 -->
-        <main>
-          <div class="banner-principal slider-content4">
-            <div class="contenedor">
-              <h3 class="titulo-banner">Boku no Hero Academia</h3>
-              <p class="descripcion-banner">
-              Las personas no nacen igual. El protagonista de esta historia es uno de esos casos raros que nacen sin 
-              superpoderes, pero esto no le impedir&aacute; perseguir su sue&ntilde;o: ser un gran h&eacute;roe como el 
-              legendario All-Might.</p>
-              <button role="button" class="push boton"><i class="fas fa-play"></i>Reproducir</button>
-              <button role="button" class="push boton"><i class="fas fa-info-circle"></i>Más información</button>
-            </div>
+        </div>
+
+        <div class="keen-slider__slide slider-content4 banner-principal">
+          <div class="contenedor">
+            <h3 class="titulo-banner">Boku no Hero Academia</h3>
+            <p class="descripcion-banner">
+            Las personas no nacen igual. El protagonista de esta historia es uno de esos casos raros que nacen sin 
+            superpoderes, pero esto no le impedir&aacute; perseguir su sue&ntilde;o: ser un gran h&eacute;roe como el 
+            legendario All-Might.</p>
+            <button role="button" class="push boton"><i class="fas fa-play"></i>Reproducir</button>
+            <button role="button" class="push boton"><i class="fas fa-info-circle"></i>Más información</button>
           </div>
-        </main>
-      </li>
-    </ul>
-  </div>
+        </div>
+
+        <svg id="arrow-left" class="arrow arrow--left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"></path></svg>
+        <svg id="arrow-right" class="arrow arrow--right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"></path></svg>
+        </div>
+        <div id="dots" class="dots"></div>
+
+      </div>
+    </div>
   
   <div class="contenedor">
     <h3 class="categorias c_populares" id="populares"><i class="fas fa-star"></i>Populares</h3>
@@ -119,7 +114,7 @@
               <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Kimetsu no Yaiba</p>
               <div class="carrusel__item__detalles__iconos">
-                <a href="assets/pages/kimetsu_no_yaiba/main.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/kimetsu_no_yaiba/main.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -128,7 +123,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Shingeki No Kyojin</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -137,7 +132,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Tsugu Tsugumomo</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -146,7 +141,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Boku No Hero Academia</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -155,7 +150,7 @@
               <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Kimetsu no Yaiba</p>
               <div class="carrusel__item__detalles__iconos">
-                <a href="assets/pages/kimetsu_no_yaiba/main.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/kimetsu_no_yaiba/main.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -164,7 +159,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Shingeki No Kyojin</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -173,7 +168,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Tsugu Tsugumomo</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -182,7 +177,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Boku No Hero Academia</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -205,7 +200,7 @@
               <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Kimetsu no Yaiba</p>
               <div class="carrusel__item__detalles__iconos">
-                <a href="assets/pages/kimetsu_no_yaiba/main.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/kimetsu_no_yaiba/main.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -214,7 +209,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Shingeki No Kyojin</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -223,7 +218,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Tsugu Tsugumomo</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -232,7 +227,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Boku No Hero Academia</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -241,7 +236,7 @@
               <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Kimetsu no Yaiba</p>
               <div class="carrusel__item__detalles__iconos">
-                <a href="assets/pages/kimetsu_no_yaiba/main.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/kimetsu_no_yaiba/main.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -250,7 +245,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Shingeki No Kyojin</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -259,7 +254,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Tsugu Tsugumomo</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -268,7 +263,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Boku No Hero Academia</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -291,7 +286,7 @@
               <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Kimetsu no Yaiba</p>
               <div class="carrusel__item__detalles__iconos">
-                <a href="assets/pages/kimetsu_no_yaiba/main.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/kimetsu_no_yaiba/main.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -300,7 +295,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Shingeki No Kyojin</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -309,7 +304,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Tsugu Tsugumomo</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -318,7 +313,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Boku No Hero Academia</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -327,7 +322,7 @@
               <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Kimetsu no Yaiba</p>
               <div class="carrusel__item__detalles__iconos">
-                <a href="assets/pages/kimetsu_no_yaiba/main.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/kimetsu_no_yaiba/main.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -336,7 +331,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Shingeki No Kyojin</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -345,7 +340,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Tsugu Tsugumomo</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -354,7 +349,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Boku No Hero Academia</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -377,7 +372,7 @@
               <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Kimetsu no Yaiba</p>
               <div class="carrusel__item__detalles__iconos">
-                <a href="assets/pages/kimetsu_no_yaiba/main.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/kimetsu_no_yaiba/main.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -386,7 +381,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Shingeki No Kyojin</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -395,7 +390,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Tsugu Tsugumomo</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -404,7 +399,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Boku No Hero Academia</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -413,7 +408,7 @@
               <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Kimetsu no Yaiba</p>
               <div class="carrusel__item__detalles__iconos">
-                <a href="assets/pages/kimetsu_no_yaiba/main.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/kimetsu_no_yaiba/main.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -422,7 +417,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Shingeki No Kyojin</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -431,7 +426,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Tsugu Tsugumomo</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -440,7 +435,7 @@
             <div class="carrusel__item__details">          
               <p class="carrusel__item__detalles__titulo">Boku No Hero Academia</p>
               <div class="carrusel__item__detalles__iconos">                  
-                <a href="assets/pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
+                <a href="pages/shingeki_no_kioyin.html"><button role="button" class="card-boton"><i class="fas fa-play"></i>Reproducir</button></a>
                 </div>
             </div>
           </div>
@@ -450,6 +445,8 @@
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.0.2/keen-slider.min.js"></script>
+  <script src="js/slider.js"></script>
   <script src="js/main.js"></script>
 
   <footer>

@@ -37,35 +37,35 @@ font-family: 'Product Sans Regular';
 font-style: normal;
 font-weight: normal;
 font-display: fallback;
-src: local('Product Sans Regular'), url('../assets/fonts/ProductSans-Regular.woff') format('woff');
+src: local('Product Sans Regular'), url('../fonts/ProductSans-Regular.woff') format('woff');
 }
 @font-face {
 font-family: 'Product Sans Light Regular';
 font-style: normal;
 font-weight: normal;
 font-display: fallback;
-src: local('Product Sans Light Regular'), url('../assets/fonts/ProductSans-Light.woff') format('woff');
+src: local('Product Sans Light Regular'), url('../fonts/ProductSans-Light.woff') format('woff');
 }
 @font-face {
 font-family: 'Product Sans Medium Regular';
 font-style: normal;
 font-weight: normal;
 font-display: fallback;
-src: local('Product Sans Medium Regular'), url('../assets/fonts/ProductSans-Medium.woff') format('woff');
+src: local('Product Sans Medium Regular'), url('../fonts/ProductSans-Medium.woff') format('woff');
 }
 @font-face {
 font-family: 'Product Sans Black Regular';
 font-style: normal;
 font-weight: normal;
 font-display: fallback;
-src: local('Product Sans Black Regular'), url('../assets/fonts/ProductSans-Black.woff') format('woff');
+src: local('Product Sans Black Regular'), url('../fonts/ProductSans-Black.woff') format('woff');
 }
 @font-face {
 font-family: 'Product Sans Bold';
 font-style: normal;
 font-weight: normal;
 font-display: fallback;
-src: local('Product Sans Bold'), url('../assets/fonts/ProductSans-Bold.woff') format('woff');
+src: local('Product Sans Bold'), url('../fonts/ProductSans-Bold.woff') format('woff');
 }
 /*---- ---- ---- ---- Scrollbar para escritorio (*.html) ---- ---- ---- ----*/
 ::-webkit-scrollbar {
@@ -99,7 +99,6 @@ body{
 .contenedor {
 	width: 95%;
 	margin: auto;
-	margin-top: 47px;
 }
 /*---- ---- ---- ---- Botones ---- ---- ---- ----*/
 @-webkit-keyframes push {
@@ -175,6 +174,8 @@ body{
 	margin-right: 10px;
 	font-size: 18px;
 }
+
+
 /*---- ---- ---- ---- Navbar para dispositivos moviles ---- ---- ---- ----*/
 
 #sidebar {
@@ -363,31 +364,21 @@ body{
 	width: 100%;
 	list-style: none;
 }
-@keyframes cambio {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
+@keyframes cambio {	
 	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
 }
 /*---- ---- ---- Backgrounds de el slider principal ---- ---- ----*/
 .slider-content1 { /*fire force */
-  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://carlos-burelo.github.io/Boreal/assets/img/banners/fire_force_banner.webp);
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://carlos-burelo.github.io/Boreal/img/banners/fire_force_banner.webp);
 }
 .slider-content2 { /*kimetsu */
-  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://carlos-burelo.github.io/Boreal/assets/img/banners/kimetsu_no_yaiba_banner.webp);
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://carlos-burelo.github.io/Boreal/img/banners/kimetsu_no_yaiba_banner.webp);
 }
 .slider-content3 { /*konosuba */
-  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://carlos-burelo.github.io/Boreal/assets/img/banners/konosuba_banner.webp);
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://carlos-burelo.github.io/Boreal/img/banners/konosuba_banner.webp);
 }
 .slider-content4 { /*boku no hero */
-  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://carlos-burelo.github.io/Boreal/assets/img/banners/boku_no_hero_banner.webp);
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://carlos-burelo.github.io/Boreal/img/banners/boku_no_hero_banner.webp);
 }
 .banner-principal {
 	font-size: 16px;
@@ -396,6 +387,7 @@ body{
 	background-position: center center;
 	background-size: cover;
 	display: flex;
+	flex-direction: column;
 	align-items: end;
 }
 .banner-principal .contenedor {
@@ -433,6 +425,58 @@ body{
 .banner-principal .boton i {
 	margin-right: 20px;
 }
+.navigation-wrapper {
+	position: relative;
+  }
+
+  .dots {
+	display: flex;
+	padding: 10px 0;
+	justify-content: center;
+  }
+
+  .dot {
+	border: none;
+	width: 10px;
+	height: 10px;
+	background: #c5c5c5;
+	border-radius: 50%;
+	margin: 0 5px;
+	padding: 5px;
+	cursor: pointer;
+  }
+
+  .dot:focus {
+	outline: none;
+  }
+
+  .dot--active {
+	background: var(--azul);
+  }
+
+  .arrow {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	fill: #fff;
+	cursor: pointer;
+  }
+
+  .arrow--left {
+	left: 5px;
+  }
+
+  .arrow--right {
+	left: auto;
+	right: 5px;
+  }
+
+  .arrow--disabled {
+	fill: rgba(255, 255, 255, 0.5);
+  }
 /*---- ---- ---- propiedades de categorias ---- ---- ----*/
 .categorias{
 	margin: 20px 0px;

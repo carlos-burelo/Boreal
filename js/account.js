@@ -25,22 +25,22 @@ function ingresarManrique(){
 // Buscando la cuenta activa
 
 if (localStorage.getItem('cuenta') === 'Carlos'){
-    document.getElementById("avatar").src="https://carlos-burelo.github.io/Boreal/assets/img/usuarios/carlos.webp";
+    document.getElementById("avatar").src="https://carlos-burelo.github.io/Boreal/img/usuarios/carlos.webp";
     var nombre = document.getElementById("username");
     nombre.className = "carlos";
 }
 if (localStorage.getItem('cuenta') === 'eliud'){
-    document.getElementById("avatar").src="https://carlos-burelo.github.io/Boreal/assets/img/usuarios/eliud.webp";
+    document.getElementById("avatar").src="https://carlos-burelo.github.io/Boreal/img/usuarios/eliud.webp";
     var nombre = document.getElementById("username");
     nombre.className = "eliud";
 }
 if (localStorage.getItem('cuenta') === 'fernando'){
-    document.getElementById("avatar").src="https://carlos-burelo.github.io/Boreal/assets/img/usuarios/fernando.webp";
+    document.getElementById("avatar").src="https://carlos-burelo.github.io/Boreal/img/usuarios/fernando.webp";
     var nombre = document.getElementById("username");
     nombre.className = "fernando";
 }
 if (localStorage.getItem('cuenta') === 'manrique'){
-    document.getElementById("avatar").src="https://carlos-burelo.github.io/Boreal/assets/img/usuarios/manrique.webp";
+    document.getElementById("avatar").src="https://carlos-burelo.github.io/Boreal/img/usuarios/manrique.webp";
     var nombre = document.getElementById("username");
     nombre.className = "manrique";
 }

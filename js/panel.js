@@ -3,8 +3,8 @@ btnToggle.addEventListener('click', function () {
   document.getElementById('sidebar').classList.toggle('active');
 });
 
-document.getElementById("admin__img").src="https://carlos-burelo.github.io/Boreal/assets/img/usuarios/carlos.webp";
-document.getElementById("avatar").src="https://carlos-burelo.github.io/Boreal/assets/img/usuarios/carlos.webp";
+document.getElementById("admin__img").src="https://carlos-burelo.github.io/Boreal/img/usuarios/carlos.webp";
+document.getElementById("avatar").src="https://carlos-burelo.github.io/Boreal/img/usuarios/carlos.webp";
 var adminName = localStorage.getItem('cuenta');
 document.getElementById('admin__name').innerHTML=adminName;
 // document.getElementById('username').innerHTML=adminName;
